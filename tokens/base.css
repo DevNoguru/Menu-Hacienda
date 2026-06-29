@@ -1,0 +1,74 @@
+/* Del Sol Refresh — semantic type & sign helpers (drop-in classes) */
+
+.ds-sign {
+  font-family: var(--font-sign);
+  font-weight: 400;
+  font-size: var(--t-display-l);
+  line-height: var(--lh-sign);
+  letter-spacing: var(--tr-sign);
+  color: var(--fg-on-ground);
+  text-shadow: var(--sign-inline);
+}
+.ds-sign--light {            /* on cream/bone grounds */
+  color: var(--accent);
+  text-shadow: var(--sign-inline-light);
+}
+
+.ds-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--t-h1);
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg);
+  text-wrap: balance;
+}
+.ds-h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--t-h2);
+  line-height: 1.1;
+  color: var(--fg);
+  text-wrap: balance;
+}
+
+.ds-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--fg);
+  text-wrap: pretty;
+}
+.ds-body-l { font-size: var(--t-body-l); }
+
+.ds-eyebrow {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--t-eyebrow);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-2);
+}
+
+/* Caps copy beneath display lines (the supporting voice) */
+.ds-caps {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: var(--tr-cap);
+  text-transform: uppercase;
+}
+
+/* Slim ribbon banner */
+.ds-ribbon {
+  display: inline-block;
+  font-family: var(--font-sign-slim);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  background: var(--ds-peach);
+  color: var(--ds-indigo);
+  padding: 6px 24px;
+  transform: skewX(var(--ribbon-skew));
+  box-shadow: 2px 2px 0 rgba(0,0,0,.14);
+}
+.ds-ribbon > * { display: inline-block; transform: skewX(calc(-1 * var(--ribbon-skew))); }

@@ -1,0 +1,19 @@
+/* Del Sol Refresh — Webfonts
+   El Camino (licensed, Fenotype) + Metallophile Sp8. */
+
+/* ── El Camino — sign-painter display family ─────────────────── */
+@font-face{font-family:"El Camino Caps";src:url("../fonts/ElCamino-Caps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Slim";src:url("../fonts/ElCamino-Slim.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino";src:url("../fonts/ElCamino.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"El Camino";src:url("../fonts/ElCamino-Bold.otf") format("opentype");font-weight:700;font-display:swap;}
+@font-face{font-family:"El Camino Outline";src:url("../fonts/ElCamino-Outline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Caps Outline";src:url("../fonts/ElCamino-CapsOutline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Soft Caps";src:url("../fonts/ElCamino-SoftEdgesCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Texture Caps";src:url("../fonts/ElCamino-TextureCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Drawings";src:url("../fonts/ElCamino-Drawings.otf") format("opentype");font-display:swap;}
+
+/* ── Metallophile Sp8 — body / supporting ────────────────────── */
+@font-face{font-family:"Metallophile Sp8";src:url("../fonts/MetallophileSp8-Light.ttf") format("truetype");font-weight:300 350;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("../fonts/MetallophileSp8-LightItalic.ttf") format("truetype");font-weight:300 350;font-style:italic;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("../fonts/MetallophileSp8-Medium.ttf") format("truetype");font-weight:500 600;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("../fonts/MetallophileSp8-MediumItalic.ttf") format("truetype");font-weight:500 600;font-style:italic;font-display:swap;}

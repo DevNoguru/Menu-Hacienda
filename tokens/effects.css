@@ -1,0 +1,35 @@
+/* Del Sol Refresh — Effects: shadows, motion, sign treatments */
+:root {
+  /* ── Shadows — gentle, warm-cast (cocoa, not black) ─────────── */
+  --shadow-1: 0 1px 2px rgba(77,45,37,.06), 0 1px 1px rgba(77,45,37,.04);
+  --shadow-2: 0 4px 14px rgba(77,45,37,.08), 0 1px 3px rgba(77,45,37,.05);
+  --shadow-3: 0 18px 40px -16px rgba(77,45,37,.22), 0 6px 14px -6px rgba(77,45,37,.10);
+  --shadow-press: inset 0 1px 0 rgba(77,45,37,.12);
+
+  /* ── Sign treatments ────────────────────────────────────────── */
+  /* Dimensional headline: cream fill + terracotta hard offset (on dark) */
+  --sign-inline:       4px 4px 0 var(--ds-terracotta), 8px 8px 0 rgba(201,105,79,.4);
+  --sign-inline-light: 3px 3px 0 var(--ds-peach);   /* terracotta fill on light */
+  --ribbon-skew:       -7deg;                         /* slim banner slant       */
+
+  /* ── Motion ─────────────────────────────────────────────────── */
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);   /* primary, slow-out */
+  --ease-rise: cubic-bezier(0.16, 0.84, 0.44, 1);
+  --dur-fast: 140ms;
+  --dur-med:  220ms;
+  --dur-slow: 420ms;
+
+  /* ── Greca border tile (gold step-fret + terracotta triangles) ─ */
+  --greca-tile: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'96'%20height%3D'48'%20viewBox%3D'0%200%2096%2048'%3E%3Crect%20width%3D'96'%20height%3D'48'%20fill%3D'%23205374'%2F%3E%3Cpath%20d%3D'M8%2C48%20L8%2C40%20L20%2C40%20L20%2C28%20L32%2C28%20L32%2C16%20L40%2C16%20L40%2C4%20L56%2C4%20L56%2C16%20L64%2C16%20L64%2C28%20L76%2C28%20L76%2C40%20L88%2C40%20L88%2C48%20Z'%20fill%3D'%23D69F56'%2F%3E%3Cpath%20d%3D'M0%2C48%20L8%2C40%20L20%2C40%20L20%2C48%20Z%20M88%2C48%20L88%2C40%20L76%2C40%20L76%2C48%20Z%20M40%2C48%20L48%2C30%20L56%2C48%20Z'%20fill%3D'%23C9694F'%2F%3E%3Cpath%20d%3D'M40%2C4%20L56%2C4%20L56%2C11%20L40%2C11%20Z'%20fill%3D'%23F3B495'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* Greca utility — drop on the bottom edge of a sign */
+.ds-greca {
+  height: 7%;
+  min-height: 36px;
+  background-color: var(--ds-indigo);
+  background-image: var(--greca-tile);
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+}

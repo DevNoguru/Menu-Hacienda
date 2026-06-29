@@ -1,0 +1,46 @@
+/* Del Sol Refresh — Colors
+   Warm-cast hospitality palette. Indigo is the primary signage ground. */
+:root {
+  /* ── Grounds & saturated brand ──────────────────────────────── */
+  --ds-indigo:       #205374; /* primary signage ground            */
+  --ds-brick:        #B25D47; /* deep red — blade signs            */
+  --ds-terracotta:   #C9694F; /* primary accent / inline shadow    */
+  --ds-clay:         #BF644B; /* terracotta variant                */
+  --ds-gold:         #D69F56; /* ochre — greca steps, accents      */
+  --ds-olive:        #3F4F3C; /* deep olive — secondary ground     */
+
+  /* ── Warm lights ────────────────────────────────────────────── */
+  --ds-peach:        #F3B495; /* ribbons, key lines                */
+  --ds-peach-light:  #F5B99F; /* soft highlight tint               */
+  --ds-cream:        #FAF5EC; /* canonical surface / type fill     */
+  --ds-bone:         #EAE6DD; /* warm neutral — board surface      */
+  --ds-sand:         #F2E2CE; /* sandstone neutral                 */
+  --ds-snow:         #FAFAF9; /* near-white                        */
+
+  /* ── Ink & lines ────────────────────────────────────────────── */
+  --ds-cocoa:        #4D2D25; /* body text on cream                */
+  --ds-ink:          #1D2021; /* near-black (rare)                 */
+  --ds-ink-soft:     #757575; /* secondary text                   */
+  --ds-line:         #E8DCC8; /* hairline divider on cream         */
+
+  /* ── Greca motif ────────────────────────────────────────────── */
+  --ds-greca-gold:   var(--ds-gold);
+  --ds-greca-terra:  var(--ds-terracotta);
+  --ds-greca-key:    var(--ds-peach);
+
+  /* ── Semantic aliases ───────────────────────────────────────── */
+  --bg:              var(--ds-cream);
+  --bg-board:        var(--ds-bone);
+  --ground:          var(--ds-indigo);
+  --surface:         #FAF7F5;
+  --surface-card:    var(--ds-snow);
+  --fg:              var(--ds-cocoa);
+  --fg-1:            var(--ds-cocoa);
+  --fg-2:            var(--ds-ink-soft);
+  --fg-on-ground:    var(--ds-cream);
+  --fg-on-ground-2:  color-mix(in oklab, var(--ds-cream) 72%, transparent);
+  --accent:          var(--ds-terracotta);
+  --accent-warm:     var(--ds-gold);
+  --accent-cool:     var(--ds-indigo);
+  --line:            var(--ds-line);
+}

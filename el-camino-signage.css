@@ -1,0 +1,77 @@
+/* ════════════════════════════════════════════════════════════════
+   HACIENDA DEL RIO — ADDENDUM 01 · Signage & El Camino
+   Drop-in stylesheet. Load AFTER colors_and_type.css.
+   Requires the /fonts/ folder (El Camino *.otf) next to this file.
+   ──────────────────────────────────────────────────────────────── */
+
+/* ── El Camino — the new sign-painter display family (12 styles) ── */
+@font-face{font-family:"El Camino Caps";src:url("./fonts/ElCamino-Caps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Slim";src:url("./fonts/ElCamino-Slim.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino-Bold.otf") format("opentype");font-weight:700;font-display:swap;}
+@font-face{font-family:"El Camino Outline";src:url("./fonts/ElCamino-Outline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Caps Outline";src:url("./fonts/ElCamino-CapsOutline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Soft Caps";src:url("./fonts/ElCamino-SoftEdgesCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Texture Caps";src:url("./fonts/ElCamino-TextureCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Drawings";src:url("./fonts/ElCamino-Drawings.otf") format("opentype");font-display:swap;}
+
+:root{
+  /* ── Display families ───────────────────────────────────────── */
+  --font-sign:         "El Camino Caps", "El Camino", var(--font-display, serif);
+  --font-sign-slim:    "El Camino Slim", "El Camino", var(--font-ui, sans-serif);
+  --font-sign-soft:    "El Camino Soft Caps", "El Camino Caps";
+  --font-sign-texture: "El Camino Texture Caps", "El Camino Caps";
+  --font-sign-outline: "El Camino Caps Outline", "El Camino Caps";
+
+  /* ── Signage palette (indigo is the primary ground) ─────────── */
+  --hdr-ground:   #205374;  /* indigo — owns full sign panels   */
+  --hdr-bone:     #EAE6DD;  /* NEW warm neutral — board surface  */
+  --hdr-peach-lt: #F5B99F;  /* light peach highlight             */
+
+  /* ── Greca border ───────────────────────────────────────────── */
+  --greca-gold:  #D69F56;
+  --greca-terra: #C9694F;
+  --greca-key:   #F3B495;
+
+  /* ── Sign treatment tokens ──────────────────────────────────── */
+  --sign-inline: 4px 4px 0 var(--greca-terra), 8px 8px 0 rgba(201,105,79,.4);
+  --ribbon-skew: -7deg;
+}
+
+/* ── Dimensional headline: cream fill / terracotta offset ──────── */
+.sign-display{
+  font-family:var(--font-sign);
+  color:#FAF5EC;
+  line-height:.86;
+  letter-spacing:.01em;
+  text-shadow:var(--sign-inline);
+}
+/* On light grounds, flip: terracotta fill / cream offset */
+.sign-display--light{
+  color:var(--greca-terra);
+  text-shadow:3px 3px 0 #F3B495;
+}
+
+/* ── Slim ribbon banner ────────────────────────────────────────── */
+.sign-ribbon{
+  display:inline-block;
+  font-family:var(--font-sign-slim);
+  background:var(--greca-key);
+  color:var(--hdr-ground);
+  padding:6px 24px;
+  letter-spacing:.02em;
+  transform:skewX(var(--ribbon-skew));
+  box-shadow:2px 2px 0 rgba(0,0,0,.14);
+}
+.sign-ribbon > *{ display:inline-block; transform:skewX(calc(-1 * var(--ribbon-skew))); }
+
+/* ── Greca border band: drop on the bottom edge of a sign ─────── */
+.hdr-greca{
+  height:7%;            /* ≈6–9% of sign height */
+  min-height:36px;
+  background-color:var(--hdr-ground);
+  background-repeat:repeat-x;
+  background-position:bottom center;
+  background-size:auto 100%;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'96'%20height%3D'48'%20viewBox%3D'0%200%2096%2048'%3E%3Crect%20width%3D'96'%20height%3D'48'%20fill%3D'%23205374'%2F%3E%3Cpath%20d%3D'M8%2C48%20L8%2C40%20L20%2C40%20L20%2C28%20L32%2C28%20L32%2C16%20L40%2C16%20L40%2C4%20L56%2C4%20L56%2C16%20L64%2C16%20L64%2C28%20L76%2C28%20L76%2C40%20L88%2C40%20L88%2C48%20Z'%20fill%3D'%23D69F56'%2F%3E%3Cpath%20d%3D'M0%2C48%20L8%2C40%20L20%2C40%20L20%2C48%20Z%20M88%2C48%20L88%2C40%20L76%2C40%20L76%2C48%20Z%20M40%2C48%20L48%2C30%20L56%2C48%20Z'%20fill%3D'%23C9694F'%2F%3E%3Cpath%20d%3D'M40%2C4%20L56%2C4%20L56%2C11%20L40%2C11%20Z'%20fill%3D'%23F3B495'%2F%3E%3C%2Fsvg%3E");
+}

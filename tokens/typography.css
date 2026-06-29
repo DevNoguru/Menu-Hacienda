@@ -1,0 +1,39 @@
+/* Del Sol Refresh — Typography
+   El Camino (sign-painter display) + Metallophile Sp8 (body). */
+:root {
+  /* ── Families ───────────────────────────────────────────────── */
+  --font-sign:         "El Camino Caps", "El Camino", Georgia, serif;   /* headlines */
+  --font-sign-slim:    "El Camino Slim", "El Camino", sans-serif;       /* ribbons / sub-labels */
+  --font-sign-soft:    "El Camino Soft Caps", "El Camino Caps", serif;
+  --font-sign-texture: "El Camino Texture Caps", "El Camino Caps", serif;
+  --font-sign-outline: "El Camino Caps Outline", "El Camino Caps", serif;
+  --font-display:      "El Camino", "El Camino Caps", Georgia, serif;   /* mixed-case display */
+  --font-body:         "Metallophile Sp8", ui-sans-serif, system-ui, sans-serif;
+  --font-ui:           "Metallophile Sp8", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:         ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ── Scale ──────────────────────────────────────────────────── */
+  --t-display-xl: clamp(64px, 11vw, 160px);  /* hero sign words   */
+  --t-display-l:  clamp(48px, 7vw, 96px);
+  --t-h1:         clamp(40px, 5vw, 64px);
+  --t-h2:         clamp(28px, 3.2vw, 44px);
+  --t-h3:         clamp(22px, 2vw, 28px);
+  --t-h4:         20px;
+  --t-body-l:     19px;
+  --t-body:       16px;
+  --t-body-s:     14px;
+  --t-caption:    13px;
+  --t-eyebrow:    12px;
+
+  /* ── Tracking — heavy uppercase is the brand signature ──────── */
+  --tr-eyebrow:   0.20em;   /* Metallophile uppercase labels */
+  --tr-cap:       0.06em;   /* tracked uppercase body        */
+  --tr-sign:      0.01em;   /* El Camino caps                */
+  --tr-tight:     -0.01em;  /* mixed-case display            */
+
+  /* ── Leading ────────────────────────────────────────────────── */
+  --lh-sign:      0.86;
+  --lh-display:   1.05;
+  --lh-snug:      1.25;
+  --lh-body:      1.55;
+}

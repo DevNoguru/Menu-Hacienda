@@ -1,0 +1,133 @@
+<!-- @dsCard group="Del Sol" viewport="1280x860" subtitle="Poolside Kitchen — menu & landing" name="Poolside" -->
+<!-- @startingPoint section="Del Sol" subtitle="Poolside Kitchen menu & landing page" viewport="1280x860" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Del Sol · Poolside Kitchen</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--ds-cream);color:var(--ds-cocoa);font-family:var(--font-body);}
+  .wrap{max-width:1280px;margin:0 auto;}
+  a{color:inherit;text-decoration:none;}
+
+  /* nav */
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 48px;border-bottom:1px solid var(--ds-line);}
+  .navlinks{display:flex;gap:32px;font-family:var(--font-ui);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ds-cocoa);}
+  .navlinks a:hover{color:var(--ds-terracotta);}
+  .reserve{font-family:var(--font-ui);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:var(--ds-terracotta);color:var(--ds-cream);padding:11px 22px;border-radius:var(--r-sm);box-shadow:var(--shadow-1);}
+
+  /* hero */
+  .hero{position:relative;background:var(--ds-indigo);color:var(--ds-cream);overflow:hidden;padding:72px 48px 0;text-align:center;}
+  .sun{width:56px;height:56px;display:block;margin:0 auto 18px;}
+  .eyebrow{font-family:var(--font-ui);font-weight:600;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--ds-peach);margin-bottom:22px;}
+  .hero h1{font-family:var(--font-sign);font-weight:400;font-size:clamp(64px,11vw,150px);line-height:.84;letter-spacing:.01em;margin:0;color:var(--ds-cream);text-shadow:var(--sign-inline);}
+  .hero .sub{font-family:var(--font-body);font-weight:300;font-size:20px;line-height:1.5;max-width:520px;margin:30px auto 40px;color:var(--fg-on-ground-2);}
+  .ribbonrow{display:flex;gap:16px;justify-content:center;margin-bottom:64px;}
+  .greca{height:64px;background:var(--ds-indigo) var(--greca-tile) repeat-x bottom center;background-size:auto 100%;}
+
+  /* menu */
+  .menu{padding:88px 48px;}
+  .menu-head{display:flex;align-items:baseline;gap:18px;margin-bottom:44px;}
+  .menu-head h2{font-family:var(--font-display);font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1;margin:0;color:var(--ds-cocoa);}
+  .menu-head .rule{flex:1;height:1px;background:var(--ds-line);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px 72px;}
+  .sect-title{font-family:var(--font-sign-slim);font-size:30px;color:var(--ds-terracotta);margin:0 0 18px;}
+  .item{display:flex;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--ds-line);}
+  .item .nm{font-family:var(--font-body);font-weight:500;font-size:17px;color:var(--ds-cocoa);}
+  .item .ds{font-family:var(--font-body);font-weight:300;font-size:14px;color:var(--ds-ink-soft);}
+  .item .dots{flex:1;border-bottom:1.5px dotted var(--ds-line);transform:translateY(-4px);}
+  .item .pr{font-family:var(--font-ui);font-weight:600;font-size:15px;color:var(--ds-terracotta);}
+
+  /* signage band */
+  .band{background:var(--ds-bone);padding:64px 48px;display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap;}
+  .sign{position:relative;width:300px;aspect-ratio:1/1;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:36px 26px;text-align:center;box-sizing:border-box;box-shadow:var(--shadow-2);}
+  .sign .t{font-family:var(--font-sign);line-height:.84;font-size:70px;}
+  .sign .n{font-family:var(--font-body);font-weight:500;font-size:13px;letter-spacing:.05em;text-transform:uppercase;line-height:1.35;max-width:200px;}
+  .sg{position:absolute;left:0;right:0;bottom:0;height:42px;background:var(--ds-indigo) var(--greca-tile) repeat-x bottom center;background-size:auto 100%;}
+  .hours{max-width:300px;}
+  .hours h3{font-family:var(--font-display);font-weight:700;font-size:28px;margin:0 0 16px;color:var(--ds-cocoa);}
+  .hours .r{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--ds-line);font-family:var(--font-body);font-size:15px;}
+  .hours .r .d{font-weight:500;}
+
+  /* footer */
+  footer{background:var(--ds-indigo);color:var(--fg-on-ground-2);}
+  .foot{display:flex;align-items:center;justify-content:space-between;padding:40px 48px;flex-wrap:wrap;gap:20px;}
+  .foot .tag{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;}
+</style></head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <img src="../../assets/logos/hdr-wordmark-black.svg" alt="Hacienda del Rio" style="height:42px;">
+    <div class="navlinks">
+      <a href="#menu">Menu</a><a href="#">Poolside</a><a href="#">Hours</a><a href="#">Find us</a>
+    </div>
+    <a class="reserve" href="#">Reserve a table</a>
+  </nav>
+
+  <header class="hero">
+    <img class="sun" src="../../assets/illustrations/del-sol-sun.svg" alt="">
+
+    <div class="eyebrow">Hacienda del Rio · del Sol</div>
+    <h1>POOLSIDE<br>KITCHEN</h1>
+    <p class="sub">A small kitchen, a slow afternoon, and the water just there. Good vibes, good food — open to the sun.</p>
+    <div class="ribbonrow">
+      <span class="ds-ribbon"><span>food · coffee · drinks</span></span>
+      <span class="ds-ribbon" style="background:var(--ds-terracotta);color:var(--ds-cream)"><span>Open Thurs – Sun</span></span>
+    </div>
+    <div class="greca"></div>
+  </header>
+
+  <section class="menu" id="menu">
+    <div class="menu-head">
+      <h2>The menu</h2><div class="rule"></div>
+    </div>
+    <div class="grid">
+      <div>
+        <h3 class="sect-title">Breakfast</h3>
+        <div class="item"><div><div class="nm">Huevos del sol</div><div class="ds">eggs, salsa verde, queso fresco</div></div><span class="dots"></span><span class="pr">14</span></div>
+        <div class="item"><div><div class="nm">Pan dulce</div><div class="ds">cinnamon, orange glaze</div></div><span class="dots"></span><span class="pr">6</span></div>
+        <div class="item"><div><div class="nm">Fruta &amp; yogurt</div><div class="ds">melon, lime, toasted seeds</div></div><span class="dots"></span><span class="pr">9</span></div>
+        <h3 class="sect-title" style="margin-top:40px;">Cold drinks</h3>
+        <div class="item"><div><div class="nm">Cold brew</div><div class="ds">single origin, over ice</div></div><span class="dots"></span><span class="pr">5</span></div>
+        <div class="item"><div><div class="nm">Agua fresca</div><div class="ds">hibiscus or cucumber-lime</div></div><span class="dots"></span><span class="pr">5</span></div>
+      </div>
+      <div>
+        <h3 class="sect-title">Poolside plates</h3>
+        <div class="item"><div><div class="nm">Tacos de la casa</div><div class="ds">citrus, smoke, a little char</div></div><span class="dots"></span><span class="pr">16</span></div>
+        <div class="item"><div><div class="nm">Esquites</div><div class="ds">corn, lime, cotija</div></div><span class="dots"></span><span class="pr">8</span></div>
+        <div class="item"><div><div class="nm">Ceviche verde</div><div class="ds">white fish, avocado, herbs</div></div><span class="dots"></span><span class="pr">17</span></div>
+        <h3 class="sect-title" style="margin-top:40px;">From the bar</h3>
+        <div class="item"><div><div class="nm">Paloma</div><div class="ds">grapefruit, mezcal, soda</div></div><span class="dots"></span><span class="pr">13</span></div>
+        <div class="item"><div><div class="nm">Michelada</div><div class="ds">lager, lime, chili rim</div></div><span class="dots"></span><span class="pr">11</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="sign" style="background:var(--ds-indigo)">
+      <div class="t" style="color:var(--ds-cream);text-shadow:var(--sign-inline)">NOTICE</div>
+      <span class="ds-ribbon"><span>Children 12 &amp; under</span></span>
+      <div class="n" style="color:var(--ds-gold)">Must be accompanied by an adult when using the pool</div>
+      <div class="sg"></div>
+    </div>
+    <div class="hours">
+      <h3>Poolside hours</h3>
+      <div class="r"><span class="d">Thursday – Friday</span><span>8a – 6p</span></div>
+      <div class="r"><span class="d">Saturday</span><span>7a – 8p</span></div>
+      <div class="r"><span class="d">Sunday</span><span>7a – 4p</span></div>
+      <div class="r"><span class="d">Mon – Wed</span><span style="color:var(--ds-ink-soft)">Closed</span></div>
+      <p style="font-family:var(--font-body);font-weight:300;font-size:15px;line-height:1.55;color:var(--ds-ink-soft);margin-top:20px;">Find the door past the courtyard, where the river bends. No reservation needed for the bar.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="greca" style="height:48px;"></div>
+    <div class="foot">
+      <img src="../../assets/logos/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:38px;">
+      <span class="tag">del Sol · Poolside Kitchen · Estate by the river</span>
+    </div>
+  </footer>
+
+</div>
+</body></html>

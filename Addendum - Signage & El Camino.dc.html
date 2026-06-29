@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#205374">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#205374"/>
+    <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="240" fill="#FAF5EC">SIGN</text>
+    <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="240" fill="#C9694F" opacity="0.5" transform="translate(14,14)">SIGN</text>
+    <g fill="#D69F56">
+      <rect x="240" y="560" width="720" height="60"/>
+      <path d="M240,560 l40,-40 h80 v40 z M880,560 l40,-40 h80 v40 z" fill="#C9694F"/>
+    </g>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Light.ttf") format("truetype");font-weight:300 350;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-LightItalic.ttf") format("truetype");font-weight:300 350;font-style:italic;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Medium.ttf") format("truetype");font-weight:500 600;font-style:normal;font-display:swap;}
+@font-face{font-family:"El Camino Caps";src:url("./fonts/ElCamino-Caps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Slim";src:url("./fonts/ElCamino-Slim.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino-Bold.otf") format("opentype");font-weight:700;font-display:swap;}
+@font-face{font-family:"El Camino Outline";src:url("./fonts/ElCamino-Outline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Caps Outline";src:url("./fonts/ElCamino-CapsOutline.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Soft Caps";src:url("./fonts/ElCamino-SoftEdgesCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Texture Caps";src:url("./fonts/ElCamino-TextureCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Drawings";src:url("./fonts/ElCamino-Drawings.otf") format("opentype");font-display:swap;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+::selection{background:#C9694F;color:#FAF5EC;}
+</style>
+</helmet>
+
+<div style="background:#FAF5EC;min-height:100vh;font-family:'Metallophile Sp8',ui-serif,Georgia,serif;color:#4D2D25;-webkit-font-smoothing:antialiased;">
+
+  <!-- ░░ HERO ░░ -->
+  <header style="position:relative;background:#205374;color:#FAF5EC;padding:96px 48px 0;overflow:hidden;">
+    <div style="max-width:1080px;margin:0 auto;position:relative;z-index:2;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:64px;">
+        <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:54px;width:auto;display:block;opacity:.95;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#F3B495;">Design System · Addendum 01</div>
+      </div>
+      <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:#F3B495;margin-bottom:18px;">Hacienda y del Sol — Signage</div>
+      <h1 style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:clamp(56px,9vw,132px);line-height:.92;letter-spacing:.01em;margin:0;color:#FAF5EC;text-shadow:4px 4px 0 #C9694F,8px 8px 0 rgba(201,105,79,.45);">SIGNAGE<br>SYSTEM</h1>
+      <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:21px;line-height:1.55;max-width:600px;margin:36px 0 80px;color:rgba(250,245,236,.86);">A new layer for the estate: a vintage sign-painter display face, a deeper signage palette, and the stepped <em style="font-style:italic;">greca</em> border — drawn from the poolside &amp; del Sol environmental work.</p>
+    </div>
+    <!-- greca band -->
+    <div style="position:relative;z-index:2;margin:0 -48px;">{{ grecaBand }}</div>
+  </header>
+
+  <!-- ░░ WHAT'S NEW ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:#E8DCC8;border:1px solid #E8DCC8;border-radius:10px;overflow:hidden;">
+      <div style="background:#FAF5EC;padding:28px 26px;">
+        <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:30px;color:#C9694F;line-height:1;margin-bottom:10px;">01</div>
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4D2D25;margin-bottom:6px;">El Camino</div>
+        <div style="font-size:15px;line-height:1.5;color:#757575;">A dimensional display typeface — Caps &amp; Slim — joins Metallophile Sp8.</div>
+      </div>
+      <div style="background:#FAF5EC;padding:28px 26px;">
+        <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:30px;color:#C9694F;line-height:1;margin-bottom:10px;">02</div>
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4D2D25;margin-bottom:6px;">Signage palette</div>
+        <div style="font-size:15px;line-height:1.5;color:#757575;">Indigo promoted to the primary ground, plus a warm bone neutral.</div>
+      </div>
+      <div style="background:#FAF5EC;padding:28px 26px;">
+        <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:30px;color:#C9694F;line-height:1;margin-bottom:10px;">03</div>
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4D2D25;margin-bottom:6px;">The greca border</div>
+        <div style="font-size:15px;line-height:1.5;color:#757575;">A stepped pyramid band for sign edges — successor to the serrated trim.</div>
+      </div>
+      <div style="background:#FAF5EC;padding:28px 26px;">
+        <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:30px;color:#C9694F;line-height:1;margin-bottom:10px;">04</div>
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4D2D25;margin-bottom:6px;">Sign components</div>
+        <div style="font-size:15px;line-height:1.5;color:#757575;">Pool notice, check-in blade, and the del Sol sandwich board.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION: TYPE ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:104px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;margin-bottom:8px;">
+      <span style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Type · New</span>
+      <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+    </div>
+    <h2 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:clamp(40px,5.5vw,62px);line-height:1;margin:0 0 14px;color:#4D2D25;">El Camino</h2>
+    <p style="font-size:18px;line-height:1.6;max-width:620px;margin:0 0 40px;color:#5b4038;">A vintage sign-painter family used across the environmental work. It carries the big, friendly, hand-lettered voice that Metallophile can't — and stays the supporting reader. Two styles are in use.</p>
+
+    <!-- big specimen on indigo -->
+    <div style="background:#205374;border-radius:14px;padding:56px 40px 0;overflow:hidden;margin-bottom:14px;">
+      <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#F3B495;margin-bottom:24px;">El Camino · Caps — dimensional inline</div>
+      <div style="font-family:{{ heroFace }};font-weight:400;font-size:clamp(64px,13vw,180px);line-height:.86;text-align:center;color:#FAF5EC;text-shadow:4px 4px 0 #C9694F,8px 8px 0 rgba(201,105,79,.4);padding-bottom:8px;">NOTICE</div>
+      <div style="margin:36px -40px 0;">{{ grecaBand }}</div>
+    </div>
+    <p style="font-size:14px;color:#9a7f74;font-style:italic;margin:0 0 48px;">Caps is always set in capitals with the cream-fill / terracotta-offset treatment on dark grounds (flip to terracotta fill + cream offset on light grounds).</p>
+
+    <!-- el camino installed note -->
+    <div style="background:#FFF2E2;border:1px solid #E8DCC8;border-radius:12px;padding:24px 28px;margin-bottom:28px;display:flex;gap:16px;align-items:flex-start;">
+      <div style="font-family:'El Camino Caps','El Camino',serif;font-size:30px;color:#3F4F3C;line-height:1;flex:none;">A</div>
+      <div>
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4D2D25;margin-bottom:6px;">El Camino — installed</div>
+        <div style="font-size:15px;line-height:1.55;color:#5b4038;">The licensed family (12 styles) is now loaded natively. <strong style="font-weight:600;">Caps</strong> carries headlines; <strong style="font-weight:600;">Slim</strong> the ribbons; and the layered cuts — Outline, Soft Edges, Texture — stack over Caps for the dimensional sign treatment.</div>
+      </div>
+    </div>
+
+    <!-- family specimen -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:18px;">
+      <div style="background:#205374;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;margin-bottom:16px;">Caps</div>
+        <div style="font-family:'El Camino Caps','El Camino',serif;font-size:56px;line-height:.9;color:#FAF5EC;text-shadow:3px 3px 0 #C9694F;">POOL</div>
+      </div>
+      <div style="background:#205374;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;margin-bottom:16px;">Caps Outline</div>
+        <div style="font-family:'El Camino Caps Outline','El Camino',serif;font-size:56px;line-height:.9;color:#FAF5EC;">POOL</div>
+      </div>
+      <div style="background:#205374;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;margin-bottom:16px;">Soft Edges</div>
+        <div style="font-family:'El Camino Soft Caps','El Camino',serif;font-size:56px;line-height:.9;color:#F3B495;">POOL</div>
+      </div>
+      <div style="background:#205374;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;margin-bottom:16px;">Texture</div>
+        <div style="font-family:'El Camino Texture Caps','El Camino',serif;font-size:56px;line-height:.9;color:#D69F56;">POOL</div>
+      </div>
+      <div style="background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin-bottom:16px;">Regular</div>
+        <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:400;font-size:46px;line-height:.95;color:#4D2D25;">Hacienda</div>
+      </div>
+      <div style="background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin-bottom:16px;">Bold</div>
+        <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:46px;line-height:.95;color:#4D2D25;">del Sol</div>
+      </div>
+      <div style="background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin-bottom:16px;">Slim</div>
+        <div style="font-family:'El Camino Slim','El Camino',serif;font-size:42px;line-height:1;color:#C9694F;">Poolside</div>
+      </div>
+      <div style="background:#3F4F3C;border-radius:12px;padding:26px 24px;text-align:center;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;margin-bottom:16px;">Drawings</div>
+        <div style="font-family:'El Camino Drawings',serif;font-size:44px;line-height:1;color:#FAF5EC;">ABCDE</div>
+      </div>
+    </div>
+    <p style="font-size:14px;color:#9a7f74;font-style:italic;margin:0 0 56px;">The big <strong style="font-weight:600;font-style:normal;">NOTICE</strong> specimen follows the <strong style="font-weight:600;font-style:normal;">Specimen style</strong> tweak — switch between Caps, Soft Edges, Texture and Outline cuts.</p>
+
+    <!-- slim + body pairing -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;" id="pairgrid">
+      <div style="background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:34px 30px;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9694F;margin-bottom:20px;">El Camino · Slim</div>
+        <div style="font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:54px;line-height:1;color:#C9694F;letter-spacing:.01em;">Children 12 &amp; under</div>
+        <div style="font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:34px;line-height:1.05;color:#4D2D25;letter-spacing:.02em;text-transform:uppercase;margin-top:18px;">Poolside Kitchen</div>
+        <div style="font-size:14px;color:#757575;margin-top:18px;line-height:1.5;">Slim is the slanted condensed companion — ribbon banners, secondary lines, location tags.</div>
+      </div>
+      <div style="background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:34px 30px;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9694F;margin-bottom:20px;">Supporting body · Metallophile Sp8</div>
+        <div style="font-family:'Metallophile Sp8',serif;font-weight:500;font-size:24px;line-height:1.25;color:#4D2D25;letter-spacing:.06em;text-transform:uppercase;">Must be accompanied by an adult when using the pool</div>
+        <div style="font-size:14px;color:#757575;margin-top:18px;line-height:1.5;">Metallophile Sp8 Medium, tracked uppercase, holds all running copy beneath the display lines. The single-typeface body rule is unchanged.</div>
+      </div>
+    </div>
+
+    <!-- type hierarchy table -->
+    <div style="border:1px solid #E8DCC8;border-radius:12px;overflow:hidden;margin-bottom:8px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1.1fr;background:#205374;color:#FAF5EC;font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;">
+        <div style="padding:14px 22px;">Role</div><div style="padding:14px 22px;">Face</div><div style="padding:14px 22px;">Treatment</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1.1fr;border-bottom:1px solid #EFE6D6;font-size:15px;">
+        <div style="padding:16px 22px;color:#4D2D25;">Hero / sign headline</div><div style="padding:16px 22px;color:#5b4038;">El&nbsp;Camino Caps</div><div style="padding:16px 22px;color:#757575;">Caps, dimensional inline</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1.1fr;border-bottom:1px solid #EFE6D6;background:#FBF7EF;font-size:15px;">
+        <div style="padding:16px 22px;color:#4D2D25;">Banner / sub-label</div><div style="padding:16px 22px;color:#5b4038;">El&nbsp;Camino Slim</div><div style="padding:16px 22px;color:#757575;">Slanted, on ribbon</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1.1fr;font-size:15px;">
+        <div style="padding:16px 22px;color:#4D2D25;">Running copy</div><div style="padding:16px 22px;color:#5b4038;">Metallophile Sp8</div><div style="padding:16px 22px;color:#757575;">Medium, +0.06em caps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION: COLOUR ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:104px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;margin-bottom:8px;">
+      <span style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Colour · Extended</span>
+      <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+    </div>
+    <h2 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:clamp(40px,5.5vw,62px);line-height:1;margin:0 0 14px;color:#4D2D25;">Signage palette</h2>
+    <p style="font-size:18px;line-height:1.6;max-width:640px;margin:0 0 40px;color:#5b4038;">The same warm family — but for signage, <strong style="font-weight:600;">indigo becomes the primary ground</strong> (it owns full sign panels) and a warm bone neutral joins for sandwich-board surfaces.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-bottom:18px;">
+      {{ swatches }}
+    </div>
+
+    <div style="background:#FFF2E2;border:1px solid #E8DCC8;border-radius:12px;padding:22px 26px;display:flex;gap:16px;align-items:flex-start;">
+      <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:20px;color:#C9694F;line-height:1;flex:none;">⌦</div>
+      <div style="font-size:15px;line-height:1.55;color:#5b4038;"><strong style="font-weight:600;">Ignore the print marks.</strong> The Figma also contains pure <span style="font-family:monospace;font-size:13px;">#E61937 / #1D44B8 / #19FF00 / #000000</span> — these are RGB registration &amp; die-cut guides for production, <em style="font-style:italic;">not</em> brand colours.</div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION: GRECA ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:104px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;margin-bottom:8px;">
+      <span style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Motif · New</span>
+      <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+    </div>
+    <h2 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:clamp(40px,5.5vw,62px);line-height:1;margin:0 0 14px;color:#4D2D25;">The greca border</h2>
+    <p style="font-size:18px;line-height:1.6;max-width:640px;margin:0 0 36px;color:#5b4038;">A stepped-pyramid band drawn from Mesoamerican <em style="font-style:italic;">greca</em> fretwork — gold steps over terracotta triangles on the indigo ground. It hugs the bottom edge of pool &amp; check-in signs, replacing the older serrated trim.</p>
+
+    <div style="border-radius:14px;overflow:hidden;border:1px solid #E8DCC8;margin-bottom:18px;">
+      <div style="background:#205374;height:120px;"></div>
+      {{ grecaBandTall }}
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+      <div style="font-size:15px;line-height:1.55;color:#5b4038;"><strong style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4D2D25;display:block;margin-bottom:6px;">Anatomy</strong>Gold step-frets (peaks) interlock with terracotta triangles (valleys); a peach key line sits between.</div>
+      <div style="font-size:15px;line-height:1.55;color:#5b4038;"><strong style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4D2D25;display:block;margin-bottom:6px;">Placement</strong>Bottom edge only, full-bleed. Band height ≈ 6–9% of sign height. Never on body surfaces.</div>
+      <div style="font-size:15px;line-height:1.55;color:#5b4038;"><strong style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4D2D25;display:block;margin-bottom:6px;">Restraint</strong>One band per sign. It is the only decorative element allowed alongside the dimensional headline.</div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION: COMPONENTS ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:104px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;margin-bottom:8px;">
+      <span style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Components · New</span>
+      <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+    </div>
+    <h2 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:clamp(40px,5.5vw,62px);line-height:1;margin:0 0 40px;color:#4D2D25;">Signage</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;align-items:start;">
+
+      <!-- POOL NOTICE -->
+      <figure style="margin:0;">
+        <div style="aspect-ratio:1/1;background:#205374;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:34px 26px 0;position:relative;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="" style="height:26px;opacity:.92;margin-bottom:22px;">
+          <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:clamp(40px,11vw,72px);line-height:.82;color:#FAF5EC;text-shadow:3px 3px 0 #C9694F,6px 6px 0 rgba(201,105,79,.4);">NOTICE</div>
+          <div style="position:relative;margin:14px 0 16px;">
+            <div style="background:#F3B495;color:#205374;font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:17px;letter-spacing:.02em;padding:5px 22px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.12);">CHILDREN 12 &amp; UNDER</div>
+          </div>
+          <div style="font-family:'Metallophile Sp8',serif;font-weight:500;font-size:13px;line-height:1.3;letter-spacing:.05em;text-transform:uppercase;color:#D69F56;text-align:center;max-width:200px;">Must be accompanied by an adult when using the pool</div>
+          <div style="position:absolute;left:0;right:0;bottom:0;">{{ grecaBand }}</div>
+        </div>
+        <figcaption style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#757575;margin-top:14px;">Pool notice — 24×24 &amp; 18×27</figcaption>
+      </figure>
+
+      <!-- CHECK-IN BLADE -->
+      <figure style="margin:0;">
+        <div style="aspect-ratio:1/1;background:#FAF5EC;border-radius:14px;display:flex;align-items:center;justify-content:center;border:1px solid #E8DCC8;">
+          <div style="width:78%;aspect-ratio:1/1;border-radius:999px;background:#B25D47;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;box-shadow:0 10px 30px -12px rgba(77,45,37,.5);">
+            <div style="position:absolute;inset:9px;border-radius:999px;border:1.5px solid rgba(250,245,236,.5);"></div>
+            <div style="position:absolute;inset:15px;border-radius:999px;border:1.5px solid rgba(250,245,236,.28);"></div>
+            <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:clamp(30px,8vw,52px);line-height:.84;color:#FAF5EC;text-align:center;text-shadow:2px 2px 0 #8f4736;">CHECK<br>IN</div>
+            <div style="font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:16px;letter-spacing:.04em;text-transform:uppercase;color:#F3B495;margin-top:8px;transform:skewX(-7deg);">food · coffee · drinks</div>
+          </div>
+        </div>
+        <figcaption style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#757575;margin-top:14px;">Check-in blade — round, brick</figcaption>
+      </figure>
+
+      <!-- SANDWICH BOARD -->
+      <figure style="margin:0;">
+        <div style="aspect-ratio:1/1;background:#EAE6DD;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:30px;border:1px solid #E8DCC8;">
+          <div style="text-align:center;">
+            <div style="font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:19px;letter-spacing:.06em;text-transform:uppercase;color:#C9694F;margin-bottom:12px;transform:skewX(-7deg);">poolside kitchen</div>
+            <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:clamp(34px,9vw,58px);line-height:.84;color:#C9694F;text-shadow:3px 3px 0 #F3B495;">GOOD<br>VIBES</div>
+            <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-size:clamp(34px,9vw,58px);line-height:.84;color:#205374;text-shadow:3px 3px 0 #D69F56;margin-top:8px;">GOOD<br>FOOD</div>
+            <div style="font-family:'Metallophile Sp8',serif;font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#5b4038;margin-top:18px;">breakfast · snacks · drinks</div>
+          </div>
+        </div>
+        <figcaption style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#757575;margin-top:14px;">del Sol sandwich board — bone</figcaption>
+      </figure>
+    </div>
+
+    <!-- ribbon element -->
+    <div style="margin-top:32px;background:#FAF7F5;border:1px solid #E8DCC8;border-radius:12px;padding:34px 30px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;">
+      <div style="max-width:360px;">
+        <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#C9694F;margin-bottom:8px;">Ribbon banner</div>
+        <div style="font-size:15px;line-height:1.55;color:#5b4038;">The skewed ribbon carries El Camino Slim sub-labels. Peach fill / indigo text on dark grounds; flip on light. Hard 2px offset shadow, never soft.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="background:#F3B495;color:#205374;font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:20px;letter-spacing:.02em;padding:7px 26px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.14);">CHILDREN 12 &amp; UNDER</div>
+        <div style="background:#C9694F;color:#FAF5EC;font-family:'El Camino Slim','El Camino',serif;font-weight:400;font-size:20px;letter-spacing:.02em;padding:7px 26px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.14);">OPEN THURS – SUN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION: TOKENS ░░ -->
+  <section style="max-width:1080px;margin:0 auto;padding:104px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;margin-bottom:8px;">
+      <span style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Tokens · Drop-in</span>
+      <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+    </div>
+    <h2 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1;margin:0 0 28px;color:#4D2D25;">Add to colors_and_type.css</h2>
+    <pre style="background:#2a2522;color:#EAE6DD;border-radius:12px;padding:30px 28px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.7;margin:0;">{{ tokenSnippet }}</pre>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer style="margin-top:104px;background:#205374;color:rgba(250,245,236,.8);">
+    <div style="margin:0;">{{ grecaBandFlip }}</div>
+    <div style="max-width:1080px;margin:0 auto;padding:48px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;">
+      <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:40px;opacity:.9;">
+      <div style="font-family:'Metallophile Sp8',ui-sans-serif,sans-serif;font-weight:400;font-size:12px;letter-spacing:.14em;text-transform:uppercase;">Addendum 01 · Signage &amp; El Camino · Hacienda y del Sol</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100,&quot;height&quot;:900},&quot;specimenStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;caps&quot;,&quot;softCaps&quot;,&quot;textureCaps&quot;,&quot;capsOutline&quot;],&quot;default&quot;:&quot;caps&quot;,&quot;tsType&quot;:&quot;'caps'|'softCaps'|'textureCaps'|'capsOutline'&quot;}}">
+class Component extends DCLogic {
+  // build one greca band as a repeating-x background tile
+  greca(height, flip) {
+    const W = 96, H = 48; // tile
+    const gold = "M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z";
+    const tile =
+      "<svg xmlns='http://www.w3.org/2000/svg' width='" + W + "' height='" + H + "' viewBox='0 0 " + W + " " + H + "'>" +
+      "<rect width='" + W + "' height='" + H + "' fill='#205374'/>" +
+      "<path d='" + gold + "' fill='#D69F56'/>" +
+      "<path d='M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z' fill='#C9694F'/>" +
+      "<path d='M40,4 L56,4 L56,11 L40,11 Z' fill='#F3B495'/>" +
+      "</svg>";
+    const uri = "url(\"data:image/svg+xml," + encodeURIComponent(tile) + "\")";
+    return React.createElement('div', { style: {
+      height: height + 'px',
+      backgroundImage: uri,
+      backgroundRepeat: 'repeat-x',
+      backgroundPosition: flip ? 'top center' : 'bottom center',
+      backgroundSize: 'auto ' + height + 'px',
+      transform: flip ? 'scaleY(-1)' : 'none',
+      backgroundColor: '#205374'
+    } });
+  }
+
+  swatchCard(name, hex, sub, isNew, dark) {
+    const txt = dark ? '#FAF5EC' : '#4D2D25';
+    return React.createElement('div', { key: name, style: {
+      borderRadius: '10px', overflow: 'hidden', border: '1px solid #E8DCC8', background: '#FAF7F5'
+    } },
+      React.createElement('div', { style: { background: hex, height: '92px', position: 'relative' } },
+        isNew ? React.createElement('span', { style: {
+          position: 'absolute', top: '8px', left: '8px', background: '#C9694F', color: '#FAF5EC',
+          fontFamily: "'Metallophile Sp8',sans-serif", fontWeight: 600, fontSize: '9px', letterSpacing: '.14em',
+          textTransform: 'uppercase', padding: '3px 7px', borderRadius: '4px'
+        } }, 'New') : null
+      ),
+      React.createElement('div', { style: { padding: '12px 14px' } },
+        React.createElement('div', { style: { fontFamily: "'Metallophile Sp8',sans-serif", fontWeight: 600, fontSize: '13px', color: '#4D2D25', letterSpacing: '.02em' } }, name),
+        React.createElement('div', { style: { fontFamily: 'ui-monospace,Menlo,monospace', fontSize: '12px', color: '#9a7f74', marginTop: '3px' } }, hex),
+        React.createElement('div', { style: { fontSize: '12px', color: '#757575', marginTop: '6px', lineHeight: 1.35 } }, sub)
+      )
+    );
+  }
+
+  renderVals() {
+    const faceMap = {
+      caps: "'El Camino Caps','El Camino',serif",
+      softCaps: "'El Camino Soft Caps','El Camino',serif",
+      textureCaps: "'El Camino Texture Caps','El Camino',serif",
+      capsOutline: "'El Camino Caps Outline','El Camino',serif"
+    };
+    const sel = this.props.specimenStyle || 'caps';
+    const heroFace = faceMap[sel] || faceMap.caps;
+
+    const swatchData = [
+      ['Indigo', '#205374', 'Primary signage ground', false],
+      ['Brick', '#B25D47', 'Blade signs, deep red', false],
+      ['Terracotta', '#C9694F', 'Accent / inline shadow', false],
+      ['Gold', '#D69F56', 'Greca steps, accents', false],
+      ['Peach', '#F3B495', 'Ribbons, key lines', false],
+      ['Light peach', '#F5B99F', 'Soft highlight tint', false],
+      ['Cream', '#FAF5EC', 'Type fill on dark', false],
+      ['Bone', '#EAE6DD', 'Sandwich-board surface', true]
+    ];
+    const swatches = swatchData.map(d => this.swatchCard(d[0], d[1], d[2], d[3], false));
+
+    const tokenSnippet =
+`:root {
+  /* ── ADDENDUM 01 · Signage ─────────────────────── */
+
+  /* New display family — El Camino (sign-painter, 12 styles). */
+  --font-display-sign: "El Camino Caps", "El Camino", var(--font-display);
+  --font-sign-slim:    "El Camino Slim", "El Camino", var(--font-ui);
+  --font-sign-soft:    "El Camino Soft Caps", "El Camino Caps";
+  --font-sign-texture: "El Camino Texture Caps", "El Camino Caps";
+
+  /* Signage palette */
+  --hdr-ground:   #205374;  /* indigo — primary sign ground   */
+  --hdr-bone:     #EAE6DD;  /* NEW warm neutral — board surface */
+  --hdr-peach-lt: #F5B99F;  /* light peach highlight           */
+
+  /* Greca border */
+  --greca-gold:   #D69F56;
+  --greca-terra:  #C9694F;
+  --greca-key:    #F3B495;
+  --greca-band:   8%;       /* band height ≈ % of sign height  */
+
+  /* Dimensional headline — cream fill on dark grounds */
+  --sign-inline: 4px 4px 0 var(--greca-terra),
+                 8px 8px 0 rgba(201,105,79,.4);
+  --ribbon-skew: -7deg;     /* slim banner slant               */
+}`;
+
+    return {
+      heroFace,
+      swatches,
+      tokenSnippet,
+      grecaBand: this.greca(56, false),
+      grecaBandTall: this.greca(72, false),
+      grecaBandFlip: this.greca(48, true)
+    };
+  }
+}
+</script>
+</body>
+</html>

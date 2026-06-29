@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#205374">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#205374"/>
+    <g fill="#D69F56">
+      <circle cx="600" cy="290" r="78"/>
+      <g stroke="#D69F56" stroke-width="22" stroke-linecap="round">
+        <line x1="600" y1="150" x2="600" y2="120"/>
+        <line x1="730" y1="200" x2="752" y2="178"/>
+        <line x1="470" y1="200" x2="448" y2="178"/>
+        <line x1="788" y1="290" x2="820" y2="290"/>
+        <line x1="412" y1="290" x2="380" y2="290"/>
+        <line x1="730" y1="380" x2="752" y2="402"/>
+        <line x1="470" y1="380" x2="448" y2="402"/>
+      </g>
+    </g>
+    <text x="600" y="500" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="120" fill="#FAF5EC">DEL</text>
+    <text x="600" y="620" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="120" fill="#FAF5EC">SOL</text>
+    <text x="600" y="620" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="120" fill="#C9694F" opacity="0.5" transform="translate(8,8)">SOL</text>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Light.ttf") format("truetype");font-weight:300 350;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-LightItalic.ttf") format("truetype");font-weight:300 350;font-style:italic;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Medium.ttf") format("truetype");font-weight:500 600;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-MediumItalic.ttf") format("truetype");font-weight:500 600;font-style:italic;font-display:swap;}
+@font-face{font-family:"El Camino Caps";src:url("./fonts/ElCamino-Caps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Slim";src:url("./fonts/ElCamino-Slim.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino-Bold.otf") format("opentype");font-weight:700;font-display:swap;}
+@font-face{font-family:"El Camino Soft Caps";src:url("./fonts/ElCamino-SoftEdgesCaps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Texture Caps";src:url("./fonts/ElCamino-TextureCaps.otf") format("opentype");font-display:swap;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+img{display:block;}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="background:#e7e5df;width:max-content;min-width:100%;min-height:100vh;box-sizing:border-box;padding:56px 48px 72px;font-family:'Metallophile Sp8',ui-serif,Georgia,serif;-webkit-font-smoothing:antialiased;">
+
+  <!-- title row -->
+  <div style="margin:0 auto 40px;max-width:1944px;">
+    <div style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:34px;color:#4D2D25;line-height:1;">Del Sol — Summer Email</div>
+    <div style="font-family:'Metallophile Sp8',sans-serif;font-size:14px;letter-spacing:.04em;color:#7a6b5e;margin-top:10px;">Three directions · Hacienda del Rio · drag your photos into any slot</div>
+  </div>
+
+  <div style="display:flex;gap:48px;align-items:flex-start;">
+
+    <!-- ════════════════════ VARIANT A — EDITORIAL ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">A — Editorial</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">Photo hero, the menu as a refined list, strong promo block — closest to your previous send.</div>
+      <!-- inbox preview -->
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <!-- email body -->
+      <div style="background:#FFF2E2;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.35);">
+
+        <!-- masthead -->
+        <div style="background:#205374;padding:30px 0 24px;text-align:center;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:50px;width:auto;margin:0 auto;opacity:.96;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#F3B495;margin-top:14px;">Est. by the river · New Braunfels</div>
+        </div>
+
+        <!-- hero photo -->
+        <image-slot id="a-hero" shape="rect" fit="cover" placeholder="Golden-hour by the river / poolside" style="width:600px;height:330px;"></image-slot>
+
+        <!-- greca band -->
+        <svg width="100%" height="40" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+          <defs><pattern id="gA1" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gA1)"/>
+        </svg>
+
+        <!-- intro -->
+        <div style="padding:40px 48px 8px;text-align:center;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#C9694F;">Summer à la Carte</div>
+          <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 4px;">
+            <img src="./assets/illustrations/del-sol-sun.svg" alt="" style="width:40px;height:40px;">
+            <h1 style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:72px;line-height:.82;margin:0;color:#C9694F;text-shadow:3px 3px 0 #F3B495;">DEL SOL</h1>
+            <img src="./assets/illustrations/del-sol-sun.svg" alt="" style="width:40px;height:40px;">
+          </div>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:18px;line-height:1.5;color:#5b4038;margin:18px auto 0;max-width:420px;">Summer has a name at Hacienda del Rio. A new menu, all season — <strong style="font-weight:600;">July 1 to August 31</strong>.</p>
+        </div>
+
+        <!-- the menu -->
+        <div style="padding:32px 48px 8px;">
+          <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:4px;">
+            <span style="font-family:'El Camino Slim','El Camino',serif;font-size:24px;color:#205374;transform:skewX(-7deg);display:inline-block;">The Plates</span>
+            <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #E8DCC8;">
+            <image-slot id="a-croissant" shape="rounded" radius="8" placeholder="Croissant" style="width:72px;height:72px;flex:none;"></image-slot>
+            <div style="flex:1;">
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:20px;color:#4D2D25;line-height:1;">Croissant Sandwich</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#757575;margin-top:5px;">Bacon, fruit</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #E8DCC8;">
+            <image-slot id="a-tacos" shape="rounded" radius="8" placeholder="Tacos" style="width:72px;height:72px;flex:none;"></image-slot>
+            <div style="flex:1;">
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:20px;color:#4D2D25;line-height:1;">Southwest Tacos</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#757575;margin-top:5px;">Citrus, smoke, a little char</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #E8DCC8;">
+            <image-slot id="a-flatbread" shape="rounded" radius="8" placeholder="Flatbread" style="width:72px;height:72px;flex:none;"></image-slot>
+            <div style="flex:1;">
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:20px;color:#4D2D25;line-height:1;">Del Río Flatbread</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#757575;margin-top:5px;">Prosciutto, goat cheese</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:baseline;gap:14px;margin:26px 0 4px;">
+            <span style="font-family:'El Camino Slim','El Camino',serif;font-size:24px;color:#C9694F;transform:skewX(-7deg);display:inline-block;">From the Bar</span>
+            <span style="height:1px;flex:1;background:#E8DCC8;"></span>
+            <span style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9a8d7e;">Made for golden hour</span>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #E8DCC8;">
+            <image-slot id="a-riorosa" shape="rounded" radius="8" placeholder="Rio Rosa" style="width:72px;height:72px;flex:none;"></image-slot>
+            <div style="flex:1;">
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:20px;color:#4D2D25;line-height:1;">Rio Rosa</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#757575;margin-top:5px;">Blush &amp; bitter, on the rocks</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;padding:16px 0;">
+            <image-slot id="a-cowboy" shape="rounded" radius="8" placeholder="French Cowboy" style="width:72px;height:72px;flex:none;"></image-slot>
+            <div style="flex:1;">
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:20px;color:#4D2D25;line-height:1;">French Cowboy</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#757575;margin-top:5px;">Bourbon, citrus, a little swagger</div>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-style:italic;font-size:17px;color:#5b4038;text-align:center;margin:14px 48px 0;line-height:1.5;">And plenty more, by the river, under the sun.</p>
+
+        <!-- CTA -->
+        <div style="text-align:center;padding:30px 48px 36px;">
+          <a href="#" style="display:inline-block;background:#C9694F;color:#FAF5EC;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 40px;border-radius:6px;box-shadow:0 6px 18px -8px rgba(201,105,79,.7);">View the Summer Menu</a>
+        </div>
+
+        <!-- hours -->
+        <div style="background:#EAE6DD;text-align:center;padding:16px 48px;font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#5b4038;">Open · 8 AM–10 PM Sun–Thurs · 8–11 PM Fri / Sat</div>
+
+        <!-- promo -->
+        <svg width="100%" height="34" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;transform:scaleY(-1);">
+          <defs><pattern id="gA2" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gA2)"/>
+        </svg>
+        <div style="background:#C9694F;color:#FFF2E2;padding:40px 48px 44px;text-align:center;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#FBD9C4;">Midweek · All Summer</div>
+          <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:80px;line-height:.86;margin:14px 0 8px;color:#FFF2E2;text-shadow:3px 3px 0 #8f4736;">15% OFF</div>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:16px;line-height:1.5;margin:0 auto 24px;max-width:380px;color:#FBE6D6;">Midweek stays are 15% off all summer — Sunday through Thursday, until August 31.</p>
+          <a href="#" style="display:inline-block;background:#FBBBA0;color:#7a3a2a;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 36px;border-radius:6px;">Book Your Escape</a>
+        </div>
+
+        <!-- sign off -->
+        <div style="background:#FFF2E2;text-align:center;padding:38px 48px 30px;">
+          <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:30px;color:#4D2D25;">Bon Appétit, Y'all.</div>
+          <div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:15px;color:#7a6b5e;margin-top:8px;">— The Hacienda del Rio team</div>
+        </div>
+
+        <!-- footer -->
+        <svg width="100%" height="34" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+          <defs><pattern id="gA3" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gA3)"/>
+        </svg>
+        <div style="background:#205374;color:rgba(250,245,236,.82);padding:36px 48px 32px;text-align:center;">
+          <div style="font-family:'El Camino Slim','El Camino',serif;font-size:22px;color:#F3B495;transform:skewX(-7deg);display:inline-block;margin-bottom:18px;">More places to roam</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:28px;">
+            <div><image-slot id="a-sis1" shape="rounded" radius="6" placeholder="Meyer" style="width:100%;height:84px;"></image-slot><div style="font-family:'Metallophile Sp8',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,245,236,.7);margin-top:6px;">The Meyer Hotel</div></div>
+            <div><image-slot id="a-sis2" shape="rounded" radius="6" placeholder="Camp" style="width:100%;height:84px;"></image-slot><div style="font-family:'Metallophile Sp8',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,245,236,.7);margin-top:6px;">Camp Comfort</div></div>
+            <div><image-slot id="a-sis3" shape="rounded" radius="6" placeholder="Claire" style="width:100%;height:84px;"></image-slot><div style="font-family:'Metallophile Sp8',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,245,236,.7);margin-top:6px;">The Claire Hotel</div></div>
+            <div><image-slot id="a-sis4" shape="rounded" radius="6" placeholder="Petit" style="width:100%;height:84px;"></image-slot><div style="font-family:'Metallophile Sp8',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,245,236,.7);margin-top:6px;">Petit Cowboy</div></div>
+          </div>
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:34px;width:auto;margin:0 auto 14px;opacity:.92;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;color:rgba(250,245,236,.7);line-height:1.7;">1273 River Terrace, New Braunfels, TX 78130<br>hacienda-delrio.com · 830 625 7772</div>
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(250,245,236,.5);margin-top:18px;">© 2026 Hacienda del Rio · @haciendadelrio</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════ VARIANT B — SIGNAGE ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">B — Signage</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">Leans into the addendum — dimensional El Camino, greca, ribbons. Reads like a hand-painted poolside sign. Photo-light.</div>
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <div style="background:#205374;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.45);">
+
+        <!-- top greca + wordmark -->
+        <div style="padding:26px 0 18px;text-align:center;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:38px;width:auto;margin:0 auto;opacity:.95;">
+        </div>
+        <svg width="100%" height="30" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+          <defs><pattern id="gB1" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gB1)"/>
+        </svg>
+
+        <!-- hero sign -->
+        <div style="padding:44px 40px 36px;text-align:center;position:relative;">
+          <img src="./assets/illustrations/del-sol-sun.svg" alt="" style="width:96px;height:96px;margin:0 auto 14px;">
+          <div style="display:inline-block;background:#F3B495;color:#205374;font-family:'El Camino Slim','El Camino',serif;font-size:20px;letter-spacing:.02em;padding:6px 26px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.18);margin-bottom:22px;">SUMMER À LA CARTE</div>
+          <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:118px;line-height:.78;color:#FAF5EC;text-shadow:5px 5px 0 #C9694F,10px 10px 0 rgba(201,105,79,.4);">DEL<br>SOL</div>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;line-height:1.5;color:#F3B495;margin:26px auto 0;max-width:380px;">Summer has a name at Hacienda del Rio</p>
+        </div>
+
+        <!-- hero photo framed as a sign -->
+        <div style="padding:0 40px 36px;">
+          <div style="border:5px solid #EAE6DD;border-radius:6px;overflow:hidden;box-shadow:0 8px 24px -10px rgba(0,0,0,.5);">
+            <image-slot id="b-hero" shape="rect" fit="cover" placeholder="Golden-hour by the river" style="width:100%;height:240px;"></image-slot>
+          </div>
+        </div>
+
+        <!-- menu board -->
+        <div style="background:#EAE6DD;margin:0 28px;border-radius:8px;padding:34px 34px 30px;box-shadow:0 10px 30px -14px rgba(0,0,0,.5);">
+          <div style="text-align:center;font-family:'El Camino Slim','El Camino',serif;font-size:30px;color:#C9694F;transform:skewX(-7deg);margin-bottom:6px;">The Plates</div>
+          <div style="height:2px;background:#205374;opacity:.18;margin:0 0 18px;"></div>
+
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;">
+            <span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;">Croissant Sandwich</span>
+            <span style="flex:1;border-bottom:1px dotted #b9a98f;transform:translateY(-4px);"></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#7a6b5e;white-space:nowrap;">bacon · fruit</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;">
+            <span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;">Southwest Tacos</span>
+            <span style="flex:1;border-bottom:1px dotted #b9a98f;transform:translateY(-4px);"></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#7a6b5e;white-space:nowrap;">citrus · smoke · char</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;">
+            <span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;">Del Río Flatbread</span>
+            <span style="flex:1;border-bottom:1px dotted #b9a98f;transform:translateY(-4px);"></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#7a6b5e;white-space:nowrap;">prosciutto · goat cheese</span>
+          </div>
+
+          <div style="text-align:center;font-family:'El Camino Slim','El Camino',serif;font-size:30px;color:#205374;transform:skewX(-7deg);margin:24px 0 6px;">From the Bar</div>
+          <div style="height:2px;background:#205374;opacity:.18;margin:0 0 18px;"></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;">
+            <span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;">Rio Rosa</span>
+            <span style="flex:1;border-bottom:1px dotted #b9a98f;transform:translateY(-4px);"></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#7a6b5e;white-space:nowrap;">blush · bitter</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;">
+            <span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;">French Cowboy</span>
+            <span style="flex:1;border-bottom:1px dotted #b9a98f;transform:translateY(-4px);"></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#7a6b5e;white-space:nowrap;">bourbon · citrus</span>
+          </div>
+          <div style="text-align:center;font-family:'Metallophile Sp8',serif;font-style:italic;font-size:14px;color:#7a6b5e;margin-top:16px;">Two cocktails made for golden hour.</div>
+        </div>
+
+        <!-- new menu ribbon -->
+        <div style="text-align:center;padding:30px 0 8px;">
+          <div style="display:inline-block;background:#C9694F;color:#FAF5EC;font-family:'El Camino Slim','El Camino',serif;font-size:20px;letter-spacing:.03em;padding:7px 30px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.2);">NEW MENU · JULY 1 – AUG 31</div>
+        </div>
+
+        <!-- CTA sign button -->
+        <div style="text-align:center;padding:22px 40px 14px;">
+          <a href="#" style="display:inline-block;background:#D69F56;color:#3b2410;font-family:'El Camino Caps','El Camino',serif;font-size:30px;letter-spacing:.02em;text-decoration:none;padding:14px 40px;border-radius:6px;box-shadow:4px 4px 0 rgba(0,0,0,.28);">VIEW THE MENU</a>
+        </div>
+        <div style="text-align:center;font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#F3B495;padding:8px 40px 34px;">Open · 8 AM–10 PM Sun–Thurs · 8–11 PM Fri / Sat</div>
+
+        <!-- promo -->
+        <svg width="100%" height="32" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;transform:scaleY(-1);">
+          <defs><pattern id="gB2" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gB2)"/>
+        </svg>
+        <div style="background:#B25D47;color:#FFF2E2;padding:38px 40px 42px;text-align:center;">
+          <div style="display:inline-block;background:#FAF5EC;color:#B25D47;font-family:'El Camino Slim','El Camino',serif;font-size:17px;padding:5px 22px;transform:skewX(-7deg);margin-bottom:18px;">COOL DOWN, COWBOY</div>
+          <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:96px;line-height:.82;color:#FFF2E2;text-shadow:4px 4px 0 #7a3a2a;">15%<br>OFF</div>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:15px;line-height:1.5;margin:18px auto 24px;max-width:340px;color:#FBE6D6;">Midweek stays, all summer. Sunday through Thursday, until August 31.</p>
+          <a href="#" style="display:inline-block;background:#205374;color:#FAF5EC;font-family:'El Camino Caps','El Camino',serif;font-size:22px;letter-spacing:.02em;text-decoration:none;padding:12px 34px;border-radius:6px;box-shadow:3px 3px 0 rgba(0,0,0,.28);">BOOK YOUR ESCAPE</a>
+        </div>
+
+        <!-- sign off + footer -->
+        <div style="background:#205374;text-align:center;padding:40px 40px 24px;">
+          <div style="font-family:'El Camino Caps','El Camino',serif;font-size:40px;line-height:.86;color:#FAF5EC;text-shadow:3px 3px 0 #C9694F;">BON APPÉTIT,<br>Y'ALL</div>
+          <div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:14px;color:#F3B495;margin-top:14px;">— The Hacienda del Rio team</div>
+        </div>
+        <svg width="100%" height="30" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+          <defs><pattern id="gB3" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gB3)"/>
+        </svg>
+        <div style="background:#205374;color:rgba(250,245,236,.78);padding:24px 40px 34px;text-align:center;font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;line-height:1.7;">
+          1273 River Terrace, New Braunfels, TX 78130<br>hacienda-delrio.com · 830 625 7772
+          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(250,245,236,.5);margin-top:14px;">© 2026 Hacienda del Rio · @haciendadelrio</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════ VARIANT C — GOLDEN HOUR ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">C — Golden Hour</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">Photo-forward and airy. Each dish gets its own image; warm cream surfaces, sun repeated as a small motif.</div>
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <div style="background:#FAFAF9;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.3);">
+
+        <!-- masthead -->
+        <div style="background:#FFF2E2;padding:24px 0;text-align:center;border-bottom:1px solid #F0E2CE;">
+          <img src="./assets/logos/hdr-wordmark-black.svg" alt="Hacienda del Rio" style="height:42px;width:auto;margin:0 auto;">
+        </div>
+
+        <!-- hero photo with overlaid tab -->
+        <div style="position:relative;">
+          <image-slot id="c-hero" shape="rect" fit="cover" placeholder="Golden-hour by the river / poolside" style="width:600px;height:360px;"></image-slot>
+          <div style="position:absolute;left:24px;bottom:24px;background:#FFF2E2;padding:10px 18px;border-radius:6px;box-shadow:0 6px 16px -6px rgba(0,0,0,.4);display:flex;align-items:center;gap:10px;">
+            <img src="./assets/illustrations/del-sol-sun.svg" alt="" style="width:26px;height:26px;">
+            <span style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">Summer à la Carte</span>
+          </div>
+        </div>
+
+        <!-- headline -->
+        <div style="padding:40px 44px 6px;text-align:center;">
+          <h1 style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:42px;line-height:1;margin:0;color:#4D2D25;">Golden hour has a menu.</h1>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:17px;line-height:1.55;color:#5b4038;margin:16px auto 0;max-width:430px;">Summer has a name at Hacienda del Rio — <strong style="font-weight:600;color:#C9694F;">Del Sol</strong>. A new menu, all season, July 1 to August 31.</p>
+        </div>
+
+        <!-- dish grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:30px 44px 8px;">
+          <div>
+            <image-slot id="c-croissant" shape="rounded" radius="10" placeholder="Croissant sandwich" style="width:100%;height:150px;"></image-slot>
+            <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:19px;color:#4D2D25;margin-top:12px;line-height:1;">Croissant Sandwich</div>
+            <div style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;margin-top:4px;">Bacon, fruit</div>
+          </div>
+          <div>
+            <image-slot id="c-tacos" shape="rounded" radius="10" placeholder="Southwest tacos" style="width:100%;height:150px;"></image-slot>
+            <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:19px;color:#4D2D25;margin-top:12px;line-height:1;">Southwest Tacos</div>
+            <div style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;margin-top:4px;">Citrus, smoke, a little char</div>
+          </div>
+          <div>
+            <image-slot id="c-flatbread" shape="rounded" radius="10" placeholder="Del Río flatbread" style="width:100%;height:150px;"></image-slot>
+            <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:19px;color:#4D2D25;margin-top:12px;line-height:1;">Del Río Flatbread</div>
+            <div style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;margin-top:4px;">Prosciutto, goat cheese</div>
+          </div>
+          <div>
+            <image-slot id="c-fruit" shape="rounded" radius="10" placeholder="Fresh fruit / sides" style="width:100%;height:150px;"></image-slot>
+            <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:19px;color:#4D2D25;margin-top:12px;line-height:1;">And Plenty More</div>
+            <div style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;margin-top:4px;">By the river, under the sun</div>
+          </div>
+        </div>
+
+        <!-- cocktails duo -->
+        <div style="padding:22px 44px 8px;">
+          <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;">
+            <span style="height:1px;width:40px;background:#E0D2BE;"></span>
+            <span style="font-family:'El Camino Slim','El Camino',serif;font-size:22px;color:#C9694F;transform:skewX(-7deg);display:inline-block;">Made for golden hour</span>
+            <span style="height:1px;width:40px;background:#E0D2BE;"></span>
+          </div>
+          <div style="display:flex;gap:18px;">
+            <div style="flex:1;background:#FFF2E2;border-radius:10px;padding:14px;text-align:center;">
+              <image-slot id="c-riorosa" shape="rounded" radius="8" placeholder="Rio Rosa" style="width:100%;height:120px;"></image-slot>
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;margin-top:12px;">Rio Rosa</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:12px;color:#757575;margin-top:3px;">Blush &amp; bitter</div>
+            </div>
+            <div style="flex:1;background:#FFF2E2;border-radius:10px;padding:14px;text-align:center;">
+              <image-slot id="c-cowboy" shape="rounded" radius="8" placeholder="French Cowboy" style="width:100%;height:120px;"></image-slot>
+              <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;margin-top:12px;">French Cowboy</div>
+              <div style="font-family:'Metallophile Sp8',serif;font-size:12px;color:#757575;margin-top:3px;">Bourbon &amp; swagger</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="text-align:center;padding:32px 44px 30px;">
+          <a href="#" style="display:inline-block;background:#205374;color:#FAF5EC;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 40px;border-radius:6px;box-shadow:0 6px 18px -8px rgba(32,83,116,.7);">View the Summer Menu</a>
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9a8d7e;margin-top:18px;">Open · 8 AM–10 PM Sun–Thurs · 8–11 PM Fri / Sat</div>
+        </div>
+
+        <!-- promo (soft) -->
+        <div style="margin:0 44px 8px;background:#FBBBA0;border-radius:12px;overflow:hidden;">
+          <svg width="100%" height="22" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+            <defs><pattern id="gC1" width="96" height="48" patternUnits="userSpaceOnUse">
+              <rect width="96" height="48" fill="#205374"/>
+              <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+              <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+              <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+            </pattern></defs>
+            <rect width="600" height="48" fill="url(#gC1)"/>
+          </svg>
+          <div style="padding:26px 30px 30px;text-align:center;">
+            <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:40px;color:#7a3a2a;line-height:1;">15% off midweek stays</div>
+            <p style="font-family:'Metallophile Sp8',serif;font-size:14px;color:#7a3a2a;margin:10px auto 18px;max-width:340px;line-height:1.5;">All summer long. Sunday through Thursday, until August 31.</p>
+            <a href="#" style="display:inline-block;background:#7a3a2a;color:#FFF2E2;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 30px;border-radius:6px;">Book Your Escape</a>
+          </div>
+        </div>
+
+        <!-- sign off -->
+        <div style="text-align:center;padding:34px 44px 26px;">
+          <div style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:28px;color:#4D2D25;">Bon Appétit, Y'all.</div>
+          <div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:14px;color:#7a6b5e;margin-top:8px;">— The Hacienda del Rio team</div>
+        </div>
+
+        <!-- footer -->
+        <div style="background:#205374;color:rgba(250,245,236,.82);padding:32px 44px;text-align:center;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:32px;width:auto;margin:0 auto 14px;opacity:.92;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;color:rgba(250,245,236,.72);line-height:1.7;">1273 River Terrace, New Braunfels, TX 78130<br>hacienda-delrio.com · 830 625 7772</div>
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(250,245,236,.5);margin-top:16px;">© 2026 Hacienda del Rio · @haciendadelrio</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─────────── second row: lean takes ─────────── -->
+  <div style="margin:64px auto 28px;max-width:1944px;">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div style="font-family:'El Camino','El Camino Caps',Georgia,serif;font-weight:700;font-size:26px;color:#4D2D25;line-height:1;">Lean &amp; clean — shorter takes</div>
+      <div style="height:1px;flex:1;background:#cfc6b8;"></div>
+    </div>
+    <div style="font-family:'Metallophile Sp8',sans-serif;font-size:14px;letter-spacing:.04em;color:#7a6b5e;margin-top:10px;">Quick to scan, fast to load, one clear action. From lightest photo use to none at all.</div>
+  </div>
+
+  <div style="display:flex;gap:48px;align-items:flex-start;">
+
+    <!-- ════════════════════ VARIANT D — LEAN LIST ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">D — Lean List</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">One photo, a plain menu list, one button. The workhorse send.</div>
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <div style="background:#FFF2E2;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.32);">
+        <div style="background:#205374;padding:20px 0;text-align:center;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:34px;width:auto;margin:0 auto;opacity:.96;">
+        </div>
+        <image-slot id="d-hero" shape="rect" fit="cover" placeholder="Golden-hour by the river" style="width:600px;height:240px;"></image-slot>
+
+        <div style="padding:34px 48px 6px;text-align:center;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#C9694F;">Summer à la Carte</div>
+          <h1 style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:58px;line-height:.84;margin:14px 0 0;color:#C9694F;text-shadow:3px 3px 0 #F3B495;">DEL SOL</h1>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:16px;line-height:1.5;color:#5b4038;margin:16px auto 0;max-width:400px;">A new menu, all season — July 1 to August 31.</p>
+        </div>
+
+        <div style="padding:26px 48px 4px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #E8DCC8;">
+            <span style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;">Croissant Sandwich</span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;white-space:nowrap;">bacon · fruit</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #E8DCC8;">
+            <span style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;">Southwest Tacos</span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;white-space:nowrap;">citrus · smoke · char</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #E8DCC8;">
+            <span style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;">Del Río Flatbread</span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;white-space:nowrap;">prosciutto · goat cheese</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #E8DCC8;">
+            <span style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;">Rio Rosa <span style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:10px;letter-spacing:.14em;color:#C9694F;vertical-align:middle;">· BAR</span></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;white-space:nowrap;">blush · bitter</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;">
+            <span style="font-family:'El Camino','El Camino Caps',serif;font-weight:700;font-size:18px;color:#4D2D25;">French Cowboy <span style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:10px;letter-spacing:.14em;color:#C9694F;vertical-align:middle;">· BAR</span></span>
+            <span style="font-family:'Metallophile Sp8',serif;font-size:13px;color:#757575;white-space:nowrap;">bourbon · citrus</span>
+          </div>
+        </div>
+
+        <div style="text-align:center;padding:28px 48px 12px;">
+          <a href="#" style="display:inline-block;background:#C9694F;color:#FAF5EC;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:15px 38px;border-radius:6px;">View the Summer Menu</a>
+        </div>
+        <div style="text-align:center;font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9a8d7e;padding:0 48px 22px;">Open · 8 AM–10 PM Sun–Thurs · 8–11 PM Fri / Sat</div>
+
+        <div style="background:#EAE6DD;text-align:center;padding:16px 48px;font-family:'Metallophile Sp8',serif;font-size:14px;color:#5b4038;">P.S. — Midweek stays are <strong style="font-weight:600;color:#C9694F;">15% off</strong> all summer, Sun–Thurs.</div>
+
+        <div style="background:#205374;color:rgba(250,245,236,.78);padding:26px 48px;text-align:center;font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;line-height:1.7;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:28px;width:auto;margin:0 auto 12px;opacity:.9;">
+          1273 River Terrace, New Braunfels, TX 78130 · hacienda-delrio.com
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════ VARIANT E — PHOTO HERO ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">E — Photo Hero</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">One big photo carries it. Dishes as a single tidy line. Fewest words.</div>
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <div style="background:#FAFAF9;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.3);">
+        <div style="position:relative;">
+          <image-slot id="e-hero" shape="rect" fit="cover" placeholder="Golden-hour by the river / poolside" style="width:600px;height:430px;"></image-slot>
+          <div style="position:absolute;left:0;right:0;bottom:0;text-align:center;padding:0 0 24px;">
+            <div style="display:inline-block;background:#FFF2E2;padding:14px 26px 16px;border-radius:8px;box-shadow:0 8px 22px -8px rgba(0,0,0,.5);">
+              <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#C9694F;">Summer à la Carte</div>
+              <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:54px;line-height:.84;color:#C9694F;text-shadow:3px 3px 0 #F3B495;margin-top:6px;">DEL SOL</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding:32px 48px 8px;text-align:center;">
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:18px;line-height:1.55;color:#5b4038;margin:0 auto;max-width:440px;">Summer has a name at Hacienda del Rio. A new menu, all season — <strong style="font-weight:600;">July 1 to August 31</strong>.</p>
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#4D2D25;line-height:1.9;margin-top:22px;">Croissant Sandwich · Southwest Tacos<br>Del Río Flatbread</div>
+          <div style="font-family:'El Camino Slim','El Camino',serif;font-size:20px;color:#C9694F;transform:skewX(-7deg);display:inline-block;margin-top:18px;">From the bar · Rio Rosa &amp; French Cowboy</div>
+          <p style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:15px;color:#7a6b5e;margin:14px auto 0;">And plenty more, by the river, under the sun.</p>
+        </div>
+
+        <div style="text-align:center;padding:28px 48px 14px;">
+          <a href="#" style="display:inline-block;background:#205374;color:#FAF5EC;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:15px 40px;border-radius:6px;">View the Summer Menu</a>
+        </div>
+        <div style="text-align:center;font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9a8d7e;padding:0 48px 26px;">Open 8 AM–10 PM Sun–Thurs · 8–11 PM Fri/Sat · 15% off midweek stays all summer</div>
+
+        <div style="background:#205374;color:rgba(250,245,236,.78);padding:26px 48px;text-align:center;font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;line-height:1.7;">
+          <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:28px;width:auto;margin:0 auto 12px;opacity:.9;">
+          1273 River Terrace, New Braunfels, TX 78130 · hacienda-delrio.com
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════ VARIANT F — TYPOGRAPHIC ════════════════════ -->
+    <div style="flex:none;width:600px;">
+      <div style="margin-bottom:6px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C9694F;">F — Typographic</div>
+      <div style="margin-bottom:18px;font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#7a6b5e;line-height:1.5;max-width:520px;">No photos at all — pure El Camino sign on bone. Lightest, boldest, instant load.</div>
+      <div style="background:#fff;border-radius:2px 2px 0 0;border-bottom:1px solid #ece6dc;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;color:#4D2D25;">Golden Hour Has a Menu</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-size:13px;color:#9a8d7e;margin-top:2px;">Summer just landed by the river.</div>
+      </div>
+
+      <div style="background:#EAE6DD;border-radius:0 0 2px 2px;overflow:hidden;box-shadow:0 12px 40px -12px rgba(77,45,37,.32);">
+        <div style="padding:30px 0 0;text-align:center;">
+          <img src="./assets/logos/hdr-wordmark-black.svg" alt="Hacienda del Rio" style="height:36px;width:auto;margin:0 auto;">
+        </div>
+
+        <div style="padding:30px 44px 8px;text-align:center;">
+          <img src="./assets/illustrations/del-sol-sun.svg" alt="" style="width:64px;height:64px;margin:0 auto 16px;">
+          <div style="display:inline-block;background:#F3B495;color:#205374;font-family:'El Camino Slim','El Camino',serif;font-size:18px;letter-spacing:.02em;padding:5px 22px;transform:skewX(-7deg);box-shadow:2px 2px 0 rgba(0,0,0,.15);margin-bottom:20px;">SUMMER À LA CARTE</div>
+          <div style="font-family:'El Camino Caps','El Camino',Georgia,serif;font-weight:400;font-size:92px;line-height:.78;color:#C9694F;text-shadow:4px 4px 0 #F3B495;">DEL<br>SOL</div>
+          <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:16px;line-height:1.55;color:#5b4038;margin:22px auto 0;max-width:380px;">Summer has a name at Hacienda del Rio. A new menu, all season — July 1 to August 31.</p>
+        </div>
+
+        <div style="padding:24px 44px 6px;text-align:center;">
+          <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:14px;letter-spacing:.05em;text-transform:uppercase;color:#4D2D25;line-height:2;">Croissant Sandwich<br>Southwest Tacos<br>Del Río Flatbread</div>
+          <div style="height:1px;width:80px;background:#c2b49c;margin:18px auto;"></div>
+          <div style="font-family:'El Camino Slim','El Camino',serif;font-size:24px;color:#205374;transform:skewX(-7deg);display:inline-block;">Rio Rosa &amp; French Cowboy</div>
+          <div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:14px;color:#7a6b5e;margin-top:8px;">Two cocktails made for golden hour.</div>
+        </div>
+
+        <div style="text-align:center;padding:30px 44px 14px;">
+          <a href="#" style="display:inline-block;background:#205374;color:#FAF5EC;font-family:'El Camino Caps','El Camino',serif;font-size:26px;letter-spacing:.02em;text-decoration:none;padding:13px 38px;border-radius:6px;box-shadow:3px 3px 0 rgba(0,0,0,.22);">VIEW THE MENU</a>
+        </div>
+        <div style="text-align:center;font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a6b5e;padding:0 44px 8px;">Open 8 AM–10 PM Sun–Thurs · 8–11 PM Fri/Sat</div>
+        <div style="text-align:center;font-family:'Metallophile Sp8',serif;font-size:14px;color:#5b4038;padding:8px 44px 30px;"><strong style="font-weight:600;color:#C9694F;">15% off</strong> midweek stays all summer · Sun–Thurs</div>
+
+        <svg width="100%" height="30" viewBox="0 0 600 48" preserveAspectRatio="none" style="display:block;">
+          <defs><pattern id="gF1" width="96" height="48" patternUnits="userSpaceOnUse">
+            <rect width="96" height="48" fill="#205374"/>
+            <path d="M8,48 L8,40 L20,40 L20,28 L32,28 L32,16 L40,16 L40,4 L56,4 L56,16 L64,16 L64,28 L76,28 L76,40 L88,40 L88,48 Z" fill="#D69F56"/>
+            <path d="M0,48 L8,40 L20,40 L20,48 Z M88,48 L88,40 L76,40 L76,48 Z M40,48 L48,30 L56,48 Z" fill="#C9694F"/>
+            <path d="M40,4 L56,4 L56,11 L40,11 Z" fill="#F3B495"/>
+          </pattern></defs>
+          <rect width="600" height="48" fill="url(#gF1)"/>
+        </svg>
+        <div style="background:#205374;color:rgba(250,245,236,.78);padding:24px 44px;text-align:center;font-family:'Metallophile Sp8',sans-serif;font-size:11px;letter-spacing:.06em;line-height:1.7;">
+          <div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:14px;color:#F3B495;margin-bottom:12px;">Bon Appétit, Y'all. — The Hacienda del Rio team</div>
+          1273 River Terrace, New Braunfels, TX 78130 · hacienda-delrio.com
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

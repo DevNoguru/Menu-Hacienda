@@ -1,0 +1,24 @@
+/* Del Sol Refresh — Spacing & radii (8pt-ish, hospitality scale) */
+:root {
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+
+  /* Radii — barely-rounded; the brand is mostly soft-square */
+  --r-xs:   4px;  /* chips            */
+  --r-sm:   6px;  /* inputs           */
+  --r-md:   10px; /* cards (default)  */
+  --r-lg:   16px; /* hero cards/modals*/
+  --r-pill: 999px;/* round controls   */
+
+  /* Section rhythm */
+  --gap-section: var(--s-9);
+  --pad-page:    var(--s-7);
+}

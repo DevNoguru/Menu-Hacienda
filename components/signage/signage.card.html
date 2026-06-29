@@ -1,0 +1,23 @@
+<!-- @dsCard group="Components" viewport="700x340" subtitle="SignCard panels + ribbon" name="Signage" -->
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>html,body{margin:0}
+body{background:var(--ds-cream);box-sizing:border-box;padding:24px;display:flex;gap:20px;justify-content:center;align-items:flex-start;}
+.sign{position:relative;width:280px;aspect-ratio:1/1;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:34px 24px;text-align:center;box-sizing:border-box;}
+.title{font-family:var(--font-sign);line-height:var(--lh-sign);font-size:64px;}
+.note{font-family:var(--font-body);font-weight:500;font-size:13px;letter-spacing:.05em;text-transform:uppercase;line-height:1.35;max-width:200px;}
+.greca{position:absolute;left:0;right:0;bottom:0;height:42px;background:var(--ds-indigo) var(--greca-tile) repeat-x bottom center;background-size:auto 100%;}
+</style></head>
+<body>
+  <div class="sign" style="background:var(--ds-indigo)">
+    <div class="title" style="color:var(--ds-cream);text-shadow:var(--sign-inline)">NOTICE</div>
+    <span class="ds-ribbon"><span>Children 12 &amp; under</span></span>
+    <div class="note" style="color:var(--ds-gold)">Must be accompanied by an adult when using the pool</div>
+    <div class="greca"></div>
+  </div>
+  <div class="sign" style="background:var(--ds-bone)">
+    <div class="title" style="color:var(--ds-terracotta);text-shadow:var(--sign-inline-light)">GOOD<br>VIBES</div>
+    <span class="ds-ribbon" style="background:var(--ds-terracotta);color:var(--ds-cream)"><span>Poolside Kitchen</span></span>
+    <div class="note" style="color:var(--ds-cocoa)">Breakfast · snacks · drinks</div>
+  </div>
+</body></html>

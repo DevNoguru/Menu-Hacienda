@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Light.ttf") format("truetype");font-weight:300 350;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-LightItalic.ttf") format("truetype");font-weight:300 350;font-style:italic;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-Medium.ttf") format("truetype");font-weight:500 600;font-style:normal;font-display:swap;}
+@font-face{font-family:"Metallophile Sp8";src:url("./fonts/MetallophileSp8-MediumItalic.ttf") format("truetype");font-weight:500 600;font-style:italic;font-display:swap;}
+@font-face{font-family:"El Camino Caps";src:url("./fonts/ElCamino-Caps.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino Slim";src:url("./fonts/ElCamino-Slim.otf") format("opentype");font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"El Camino";src:url("./fonts/ElCamino-Bold.otf") format("opentype");font-weight:700;font-display:swap;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+html,body{margin:0;padding:0;background:#FBF7EF;}
+img{display:block;}
+::selection{background:#C9694F;color:#FAF5EC;}
+@media (max-width:640px){
+  .dsnav{padding:14px 18px !important;gap:12px !important;}
+  .dsnavlinks{gap:16px !important;font-size:11px !important;}
+  .dshero{height:auto !important;padding:24px 18px 0 !important;}
+  .dshero p{font-size:16px !important;margin-top:18px !important;}
+  .dsband{margin-top:30px !important;}
+  .dstabs{gap:20px !important;padding:13px 10px !important;}
+  .dstabs a{font-size:12px !important;letter-spacing:.12em !important;}
+  .dssec-title{font-size:38px !important;}
+}
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="100" fill="#205374"/>
+<circle cx="50" cy="44" r="14" fill="#D69F56"/>
+<g stroke="#D69F56" stroke-width="2.4" stroke-linecap="round">
+<line x1="50" y1="20" x2="50" y2="26"/><line x1="50" y1="62" x2="50" y2="68"/>
+<line x1="26" y1="44" x2="32" y2="44"/><line x1="68" y1="44" x2="74" y2="44"/>
+<line x1="33" y1="27" x2="37" y2="31"/><line x1="63" y1="57" x2="67" y2="61"/>
+<line x1="67" y1="27" x2="63" y2="31"/><line x1="37" y1="57" x2="33" y2="61"/>
+</g>
+<text x="50" y="84" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#F3B495" font-style="italic">del Sol</text>
+</svg>
+</template>
+
+<div style="background:#FBF7EF;min-height:100vh;font-family:'Metallophile Sp8',ui-serif,Georgia,serif;color:#4D2D25;-webkit-font-smoothing:antialiased;">
+
+  <!-- ░░ TOP NAV ░░ -->
+  <nav class="dsnav" style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:16px 32px;max-width:1180px;margin:0 auto;">
+    <img src="./assets/logos/hdr-wordmark-naranja.svg" alt="Hacienda del Rio" style="height:30px;width:auto;">
+    <div class="dsnavlinks" style="display:flex;align-items:center;gap:28px;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#7a6b5e;">
+      <a href="#desayuno" style="color:inherit;text-decoration:none;">Breakfast</a>
+      <a href="#comida" style="color:inherit;text-decoration:none;">Kitchen</a>
+      <a href="#bebidas" style="color:inherit;text-decoration:none;">Drinks</a>
+      <a href="#visita" style="color:inherit;text-decoration:none;">Visit</a>
+    </div>
+    <a href="#" style="display:none;align-items:center;gap:8px;background:#C9694F;color:#FAF5EC;font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:11px 22px;border-radius:999px;">Download menu <span style="font-size:13px;">&#8595;</span></a>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <header class="dshero" style="background:#205374;color:#FAF5EC;text-align:center;padding:30px 32px 0;height:464px;overflow:hidden;display:flex;flex-direction:column;">
+    <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#D69F56;margin-bottom:30px;">At Hacienda del Rio &middot; by the river</div>
+    <img src="./assets/welcome-banner.svg" alt="Welcome" style="width:min(210px,42%);height:auto;display:block;margin:0 auto 10px;">
+    <div style="display:flex;align-items:center;justify-content:center;">
+      <img src="./assets/logos/del-sol-logo.svg" alt="Del Sol" style="width:min(380px,62%);height:auto;">
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;margin:28px auto 0;">
+      <img src="./assets/food-coffee-drinks.png" alt="Food · Coffee · Drinks" style="width:min(360px,76%);height:auto;">
+    </div>
+    <p style="font-family:'Metallophile Sp8',serif;font-weight:300;font-size:18px;line-height:1.5;color:rgba(250,245,236,.86);max-width:560px;margin:20px auto 0;">Simple food, done well.<br>From the morning's first coffee to the last spritz at sunset.</p>
+    <div class="dsband" style="margin:auto -32px 0;height:34px;background:url('./assets/aztec-band.svg') repeat-x center;background-size:auto 34px;"></div>
+  </header>
+
+  <!-- ░░ STICKY TABS ░░ -->
+  <div style="position:sticky;top:0;z-index:30;background:#FBF7EF;border-bottom:1px solid #E7D9C2;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:42px;padding:16px 20px;max-width:1180px;margin:0 auto;" class="dstabs">
+      <a data-tab="desayuno" href="#desayuno" style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#9a8d7e;padding:6px 2px;border-bottom:2px solid transparent;">Breakfast</a>
+      <a data-tab="comida" href="#comida" style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#9a8d7e;padding:6px 2px;border-bottom:2px solid transparent;">Kitchen</a>
+      <a data-tab="bebidas" href="#bebidas" style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#9a8d7e;padding:6px 2px;border-bottom:2px solid transparent;">Drinks</a>
+    </div>
+  </div>
+
+  <!-- ═══════════ DESAYUNO ═══════════ -->
+  <section id="desayuno" data-screen-label="Breakfast" style="scroll-margin-top:62px;padding-top:8px;">
+    <div style="text-align:center;margin:56px 0 32px;">
+      <span style="font-family:'El Camino Caps','El Camino',serif;font-size:36px;color:#C9694F;display:inline-block;">good morning</span>
+    </div>
+    <div style="column-width:330px;column-gap:46px;max-width:880px;margin:0 auto;padding:0 28px 8px;">
+
+      <!-- À LA CARTE -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">À la carte</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Fruit Cup</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$9</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Fruit Parfait</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$9</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Cereal</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$5</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Croissant</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$5</span></div></div>
+      </div>
+
+      <!-- WAFFLES -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Waffles</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Original Buttermilk</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$8</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">With syrup</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Nutella &amp; Banana</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Fresh Fruit</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">With whipped cream</div></div>
+      </div>
+
+      <!-- BREAKFAST TACO -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Breakfast Taco</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$5</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Bacon, Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Sausage, Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Taco Plate</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Choice of 2</div></div>
+      </div>
+
+      <!-- CROISSANT SANDWICH -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Croissant Sandwich</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$8</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Bacon, Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Sausage, Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Ham, Egg &amp; Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div></div>
+      </div>
+
+      <!-- COFFEE -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Coffee</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Espresso</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$4</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Single</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Drip Coffee</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$5</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">10 oz</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Cappuccino</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">6 oz</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Macchiato</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">8 oz</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Café Latte</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">10 oz</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Add-Ons</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">+$1</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">French vanilla &middot; caramel &middot; sugar-free vanilla</div></div>
+      </div>
+
+      <!-- BEVERAGES -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:10px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Beverages</div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:12px;letter-spacing:.04em;color:#F3B495;margin-top:1px;">$4 each</div></div>
+        <div style="padding:10px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Juice</span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-left:10px;">Cranberry or orange</span></div>
+        <div style="padding:10px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Milk</span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-left:10px;">2% or chocolate</span></div>
+        <div style="padding:10px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Soda</span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-left:10px;">Assorted Coke products</span></div>
+        <div style="padding:10px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Sparkling Water</span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-left:10px;">Rambler &middot; assorted</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ COMIDA ═══════════ -->
+  <section id="comida" data-screen-label="Kitchen" style="scroll-margin-top:62px;">
+    <div style="text-align:center;margin:40px 0 32px;">
+      <span style="font-family:'El Camino Caps','El Camino',serif;font-size:36px;color:#C9694F;display:inline-block;">the kitchen</span>
+    </div>
+    <div style="column-width:330px;column-gap:46px;max-width:880px;margin:0 auto;padding:0 28px 8px;">
+
+      <!-- SALADS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Salads</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Garden Salad</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$15</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Spring mix, cucumber, tomato, purple onion, croutons &middot; balsamic vinaigrette or ranch</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Spring Berry Salad</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$15</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Spring mix, romaine, strawberries, goat cheese, walnuts, balsamic vinaigrette</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Caesar Salad</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$13</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Romaine, croutons, creamy parmesan dressing</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Add Chicken</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">+$4</span></div></div>
+      </div>
+
+      <!-- PANINI -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Panini</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Smoked Ham &amp; Swiss</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$14</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Chicken, Bacon &amp; Avocado</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$16</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Hummus, Roasted Red Peppers, Onion &amp; Olives</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$14</span></div></div>
+      </div>
+
+      <!-- FLATBREADS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Flatbreads</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Cheese</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$13</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Pepperoni</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$14</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">BBQ Chicken</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$16</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Garden Veggie</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$16</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Roasted red pepper, red onion, olives</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">del Rio</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$19</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Goat cheese, caramelized onions, prosciutto, arugula &amp; balsamic reduction</div></div>
+      </div>
+
+      <!-- SNACKS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Snacks</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Truffle Parm Fries</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$11</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Charcuterie Box</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$17</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Veggie &amp; Hummus Box</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$17</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Served with fresh crudités &amp; naan bread</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Chicken Wings</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$12</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">BBQ, buffalo, or garlic parmesan &middot; served with ranch</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Chicken Quesadilla</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$12</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Served with sour cream &amp; salsa</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Grilled Chicken Tenders</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$12</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">4 ct.</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Tenders Basket with Fries</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$15</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">3 ct.</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Southwest Tacos</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$10</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">2 ct.</div></div>
+      </div>
+
+      <!-- CHIPS & DIPS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Chips &amp; Dips</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Cowboy Caviar</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Guac</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$9</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Salsa</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$9</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Dip Trio</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$17</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Salsa, guacamole, Cowboy Caviar</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ BEBIDAS ═══════════ -->
+  <section id="bebidas" data-screen-label="Drinks" style="scroll-margin-top:62px;">
+    <div style="text-align:center;margin:40px 0 32px;">
+      <span style="font-family:'El Camino Caps','El Camino',serif;font-size:36px;color:#C9694F;display:inline-block;">cheers</span>
+    </div>
+    <div style="column-width:330px;column-gap:46px;max-width:880px;margin:0 auto;padding:0 28px 8px;">
+
+      <!-- SPECIALTY COCKTAILS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:10px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Specialty Cocktails</div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:12px;letter-spacing:.04em;color:#F3B495;margin-top:1px;">$10 each</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Rio Rosa</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Vodka, prickly pear, lime, sparkling soda</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Texas Lemonade</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Deep Eddy Lemon, sparkling soda, lemonade</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Hacienda Margarita</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Tequila, orange liqueur, house margarita mix</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Guadalupe Paloma</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Tequila, grapefruit, lime, sparkling soda</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Cypress Bend</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Bourbon, fresh lemonade, Texas honey</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">River Terrace Breeze</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Rum, pineapple, cranberry, lime</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">French Cowboy</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Tequila, lemon, agave, sparkling rosé</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Mañana Mary</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Vodka, house Bloody Mary mix, lime</div></div>
+        <div style="padding:11px 0;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">del SOL Mimosa</span><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Prosecco, orange or cranberry juice</div></div>
+      </div>
+
+      <!-- DRAFT BEERS -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:17px;letter-spacing:.24em;text-transform:uppercase;">Draft Beers</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Ask Your Bartender</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Karbach Brewing, Twisted X Brewing, Michelob Ultra, Modelo Especial</div></div>
+      </div>
+
+      <!-- BEER -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:11px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Beer</div></div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin:12px 0 0;">Star Republic Brewing</div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Tropical Cowboy</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Hazy IPA</div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Palomino Light</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Light Lager</div></div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin:16px 0 0;">Domestic &amp; Imported</div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Bud Light</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Coors Light</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Miller Lite</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Michelob Ultra</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Yuengling Light Lager</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$6</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Corona Extra</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Dos Equis</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Shiner Bock</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div></div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C9694F;margin:16px 0 0;">Cider &middot; Seltzer &middot; Non-Alcoholic</div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">High Noon Pineapple</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$8</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Hard Seltzer</div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">White Claw Black Cherry</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$7</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Hard Seltzer</div></div>
+        <div style="padding:10px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Athletic Run Wild IPA</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;color:#C9694F;white-space:nowrap;">$5</span></div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;margin-top:3px;">Non-Alcoholic</div></div>
+      </div>
+
+      <!-- WINE -->
+      <div style="break-inside:avoid;margin-bottom:34px;">
+        <div style="background:#205374;color:#FAF5EC;text-align:center;padding:10px 14px;margin-bottom:6px;"><div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;">Wine</div><div style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:12px;letter-spacing:.04em;color:#F3B495;margin-top:1px;">Glass &middot; $9</div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">McPherson Albariño</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;white-space:nowrap;">White</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">McPherson Rosé</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;white-space:nowrap;">Rosé</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">McPherson Red Blend</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;white-space:nowrap;">Red</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Poppy Cabernet</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;white-space:nowrap;">Red</span></div></div>
+        <div style="padding:11px 0;"><div style="display:flex;align-items:baseline;gap:10px;"><span style="font-family:'Metallophile Sp8',serif;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#4D2D25;">Bubbles</span><span style="flex:1 0 16px;border-bottom:1px dotted #c2ad8d;transform:translateY(-4px);"></span><span style="font-family:'Metallophile Sp8',serif;font-style:italic;font-size:13px;color:#9a897a;white-space:nowrap;">Sparkling</span></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer id="visita" style="scroll-margin-top:62px;margin-top:60px;">
+    <div style="max-width:1080px;margin:0 auto;padding:48px 28px 8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+      <div style="border:1px solid #E0D2BC;border-radius:10px;padding:28px 26px;background:#FAF5EC;">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9694F;margin-bottom:14px;">Poolside</div>
+        <div style="font-family:'El Camino Slim','El Camino',serif;font-size:30px;color:#205374;transform:skewX(-7deg);display:inline-block;margin-bottom:14px;">All summer</div>
+        <div style="font-size:14px;line-height:1.55;color:#5b4038;">Food and drinks served right at the water's edge.</div>
+      </div>
+      <div style="border:1px solid #E0D2BC;border-radius:10px;padding:28px 26px;background:#205374;color:#FAF5EC;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:40px;width:auto;opacity:.95;margin-bottom:16px;">
+        <div style="font-size:13px;line-height:1.6;color:rgba(250,245,236,.85);">By the river. Don't miss it.</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#F3B495;margin-top:10px;">hacienda-delrio.com</div>
+      </div>
+      <div style="border:1px solid #E0D2BC;border-radius:10px;padding:28px 26px;background:#FAF5EC;">
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9694F;margin-bottom:14px;">Visit us</div>
+        <div style="font-family:'El Camino Slim','El Camino',Georgia,serif;font-size:30px;line-height:1.05;color:#205374;transform:skewX(-7deg);display:inline-block;margin-bottom:12px;">New Braunfels, TX</div>
+        <div style="font-size:14px;line-height:1.6;color:#5b4038;">1273 River Terrace<br>830 625 7772 &middot; @haciendadelrio</div>
+        <div style="font-family:'Metallophile Sp8',sans-serif;font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#7a6b5e;margin-top:14px;">8 AM–10 PM Sun–Thu &middot; 8–11 PM Fri / Sat</div>
+      </div>
+    </div>
+
+    <div style="background:#205374;color:#FAF5EC;text-align:center;padding:48px 28px 54px;">
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <img src="./assets/logos/del-sol-logo.svg" alt="Del Sol" style="width:min(220px,60%);height:auto;">
+      </div>
+      <img src="./assets/hdr-wordmark-cream.svg" alt="Hacienda del Rio" style="height:30px;width:auto;opacity:.9;margin-top:18px;display:inline-block;">
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100,&quot;height&quot;:1400}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.ids = ['desayuno', 'comida', 'bebidas'];
+    this.tabs = Array.from(document.querySelectorAll('[data-tab]'));
+
+    const setActive = (id) => {
+      this.tabs.forEach(t => {
+        const on = t.getAttribute('data-tab') === id;
+        t.style.color = on ? '#C9694F' : '#9a8d7e';
+        t.style.borderBottomColor = on ? '#C9694F' : 'transparent';
+      });
+    };
+    this.setActive = setActive;
+
+    // click → smooth scroll with sticky offset
+    this.tabs.forEach(t => {
+      t.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = t.getAttribute('data-tab');
+        const el = document.getElementById(id);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY - 58;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+        setActive(id);
+      });
+    });
+
+    // scroll spy
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if (en.isIntersecting) setActive(en.target.id); });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    this.ids.forEach(id => { const el = document.getElementById(id); if (el) obs.observe(el); });
+    this._obs = obs;
+
+    setActive('desayuno');
+  }
+  componentWillUnmount() { if (this._obs) this._obs.disconnect(); }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
